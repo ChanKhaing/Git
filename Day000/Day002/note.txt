@@ -1,0 +1,115 @@
+Today I learned about SSH key generation, and I understand how the SSH server and client work.
+
+If you want to log in with SSH without typing your password every time, you need to generate a key pair: a public key and a private key.
+
+The public key is uploaded to the server, and the private key stays on your machine.
+
+This is the process and the commands.
+
+First, run:
+
+`ssh-keygen -t rsa -b 1024`
+
+I first tried `-t sba`, but it did not work because the correct type is `rsa`. I also typed `1048`, but the correct number is `1024`.
+
+After running the command, it creates two files:
+
+* `id_rsa` (private key)
+* `id_rsa.pub` (public key)
+
+These files are stored in the user's home directory inside the `.ssh` folder.
+
+When you generate the key pair, you should set a passphrase for the private key. This helps protect your private key, so other people cannot use it.
+
+**Reminder:** The private key file should have permission `600`.
+
+If you are the root user, the keys are stored in `/root/.ssh/`.
+
+The second step is to upload the public key to the server.
+
+Command:
+
+`ssh-copy-id -i /root/.ssh/id_rsa.pub username@server_ip_address`
+
+This time, you need to enter the server user's password.
+
+The third step is to connect to the server.
+
+Command:
+
+`ssh -i /root/.ssh/id_rsa username@server_ip_address`
+
+If the login is successful, you are connected to the server.
+
+If you are not sure whether you are on the server or your local machine, you can run `ifconfig` or `ip addr`. If the IP address is different from your local machine's IP address, you know you are on the server.
+
+This is what I learned today, and this is how I understand SSH key authentication.
+
+
+မင်းမှာ အိမ်တစ်လုံး ရှိတယ်လို့ စဉ်းစားလိုက်။
+
+Server က အိမ်ပါ။
+
+Client (မင်း Laptop) က အိမ်ကို ဝင်ချင်တဲ့သူပါ။
+
+ssh-keygen ကို run လိုက်ရင်
+
+သော့နှစ်ခု ထွက်လာတယ်။
+
+id_rsa
+
+ဒါက Private Key ဖြစ်တယ်။
+
+id_rsa.pub
+
+ဒါက Public Key ဖြစ်တယ်။
+
+Private Key ကို
+
+👉 မင်း Laptop ထဲမှာပဲ သိမ်းထားရမယ်။
+
+ဘယ်သူ့ကိုမှ မပေးရဘူး။
+
+Public Key ကိုတော့
+
+Server ဆီ ပို့လိုက်တယ်။
+
+Server က
+
+"ဒီ Public Key နဲ့ ကိုက်ညီတဲ့ Private Key ကိုင်ထားတဲ့သူပဲ ဝင်ခွင့်ရှိမယ်"
+
+လို့ မှတ်ထားတယ်။
+
+နောက်တစ်ခါ
+
+ssh user@server
+
+လုပ်လိုက်ရင်
+
+Server က
+
+"မင်းမှာ Private Key တကယ်ရှိလား?"
+
+လို့ စမ်းတယ်။
+
+Client က
+
+Private Key ကို မပို့ဘဲ သက်သေပြတယ်။
+
+Server က
+
+Public Key နဲ့ စစ်တယ်။
+
+ကိုက်ညီရင်
+
+✅ ဝင်ခွင့်ပေးတယ်။
+
+မကိုက်ရင်
+
+❌ ဝင်ခွင့်မပေးဘူး။
+
+အရေးကြီးဆုံး မှတ်ထားရမယ့် စာကြောင်း
+
+Private Key ကို ဘယ်တော့မှ မပို့ဘူး။ Public Key ပဲ Server ကို ပို့တယ်။
+
+ဒီအချက်ကို နားလည်သွားရင် SSH Key Authentication ရဲ့ အဓိကအယူအဆကို နားလည်သွားပြီလို့ ပြောလို့ရပါတယ်။
