@@ -1,0 +1,55 @@
+14.7.2026
+#### user and group management 
+useradd mgmg (you want to create you need sudo power) and what really  happen this process behind
+/etc/passwd || /etc/group || /home(homedictory add) || /etc/passwd
+when os install you create the acc is auto add in sudo gp but you adduser is not get
+
+you want to add
+sudo usermod -aG sudo (newusername) 
+
+
+acatually you check root permission /etc/sudoers file 
+but if you don't enter command and which place is going changing 
+yeah you can watch 
+
+don't want to use command but you want  changing with nano or vi yes you can 
+before we start  i want to alert one thing 
+you can use nano or vi but it can crash you when you import or edit is wrong 
+so my suggestion is use sudo visudo command 
+and you see User privilege specification 
+ root ALL=(ALL:ALL) ALL. you can put test 
+newuser ALL=(ALL:ALL) ALL and you can test switch 
+su newuser and write password for newuser and 
+test sudo whoami and enter your new password you see root this is okay and
+ if you got root permission rm -rf / ( don't do it i amjust kidding) (this will everything delete /boot file )
+let me breakdown if you give sudo premession visudo and add newuser ALL=(ALL:ALL) .you want to withdraw sudo permission you can remove this text use visudo.
+ 
+you write usemod -aG root newuser is  not working 
+.sudoers ဖိုင်ထဲမှာ %sudo အုပ်စုကိုပဲ ပါဝါပေးထားပြီး %root အုပ်စုကို ပါဝါပေးမထားလို့ပါ။
+ ဒါကြောင့် root group ထဲ ဝင်ရုံနဲ့ sudo သုံးလို့ မရပါဘူး။ %sudo group ထဲ ထည့်မှပဲ (သို့) visudo ထဲ နာမည်ရေးမှပဲ sudo သုံးလို့ ရတာ ဖြစ်ပါတယ်။
+ sudo usermod -aG sudo mgmg လို့ ရိုက်လိုက်တဲ့အခါ sudoers ဖိုင်ထဲမှာ mgmg ဆိုတဲ့ နာမည် တိုးလာမှာ မဟုတ်ပါဘူး။ ဘာလို့လဲဆိုတော့ သူက sudo ဆိုတဲ့ Group အဖွဲ့ဝင် ဖြစ်သွားလို့ပါ။
+sudoers ဖိုင်ထဲက အောက်ပါစာကြောင်းက အလုပ်လုပ်သွားတာဖြစ်ပါတယ်-
+%sudo    ALL=(ALL:ALL) ALL
+စနစ်က "mgmg ရဲ့ နာမည်ကို sudoers ထဲမှာ ရှာမတွေ့ပေမဲ့ သူက %sudo အဖွဲ့ဝင် ဖြစ်နေတာပဲ၊ ဒါကြောင့် ပါဝါပေးလိုက်မယ်" ဆိုပြီး တွေးတာပါ
+
+if you want to redraw you can use two method 
+sudo deluser username gpname(it will support debain 100% and but i am not sure this is work on redhat,debain,arch)
+sudo gpasswd -d username gpname(-d mean delete this acc from gp don't worry it don't delete your acc)
+if you want to do this process redhat
+sudo usermod -aG wheel username
+sudo gpasswd -d username gpname
+
+"Group ထဲကနေ ဖြုတ်ပြီးရင် ချက်ချင်း စမ်းလို့မရသေးပါဘူး။ Session Cache ကြောင့်မို့လို့ အရင်ဆုံး exit လုပ်ပြီးမှ login ပြန်ဝင်ပြီး စမ်းသပ်ပါ"
+if you want to create group you use this command
+sudo groudadd hr 
+"I already explained how to add other users to this group, so please see above."
+
+
+##Creating a GroupUse the groupadd command followed by the new group name.Basic creation:
+ sudo groupadd group_nameCreate with specific GID: sudo groupadd -g 1500 group_nameCreate a system group: sudo groupadd -r group_nameRemoving a GroupUse the groupdel command followed by the group name you want to delete.Basic removal: sudo groupdel group_nameModifying and Verifying GroupsYou can change group properties or verify their existence with these commands:Rename a group: sudo groupmod -n new_name old_nameChange group GID: sudo groupmod -g 1600 group_nameList all groups: cat /etc/groupCheck specific group: grep group_name /etc/groupSee user's groups: groups username
+
+
+sudo dnf install acl -y (if you can't use getfacl or setfacl you check this acl package is here or not .but builtin this is not included you install acl)
+
+
+
