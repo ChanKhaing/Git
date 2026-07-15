@@ -36,6 +36,7 @@ echo "   - Date Check : $CURRENT_DATE"
 
 # မင်းကိုယ်တိုင် စမ်းသပ်အောင်မြင်ခဲ့တဲ့ OS Release Fetch နည်းလမ်း
 OS_INFO=$(cat /etc/os-release | grep -E "PRETTY_NAME|ID_LIKE")
+#OR you can use hostnamectl command to get OS info
 echo "   - OS Info Check:"
 echo "$OS_INFO"
 
