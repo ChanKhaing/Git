@@ -42,7 +42,8 @@ Command: chmod 4755 filename သို့မဟုတ် chmod u+s filename
 
 Command: chmod 2775 directoryname သို့မဟုတ် chmod g+s directoryname
 
-၃။ Sticky Bit (1)
+၃။ Sticky Bit (1) this 1 is not excute it is sticky bit (Don't misunderstand 1 this is sticky bit
+ read 4 write 2 excute 1 stick bit is first come and after permission)
 ရည်ရွယ်ချက်: /tmp လိုမျိုး နေရာမျိုးမှာ သုံးပါတယ်။ လူတိုင်းက ဖိုင်ဖန်တီးနိုင်ပေမဲ့ ကိုယ်ပိုင်ဖိုင်ကိုပဲ ကိုယ်ပြန်ဖျက်လို့ရအောင် ကာကွယ်ပေးတာပါ။
 
 ဥပမာ: /tmp folder ကို ls -ld /tmp နဲ့ စစ်ကြည့်ရင် နောက်ဆုံးမှာ t ဆိုတဲ့ character ကို တွေ့ရပါမယ်။
