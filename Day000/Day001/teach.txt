@@ -1,0 +1,51 @@
+15.7.2026
+
+Today learning(what is bash and it really work like programming)
+
+bash input 
+name="mgmg"
+read =name 
+or parameter name=$1
+bash ./example.sh mgmg (argument may do like a parameter. )
+
+name=$1 
+echo "my name is $name"
+
+for alert you create .txt and this is being folder not file.txt and 
+if you want to get .txt only touch .txt (don't miss it bcs i miss it and wrong understand umask)
+
+User and group 
+when you create the folder or file and you want to know what permission in this file
+you can run ls -la or getfacl umask is change permission when you creat at time
+
+default umask permission is 0022 and you can change 
+Linux မှာ စနစ်က သတ်မှတ်ထားတဲ့ အမြင့်ဆုံး Default Permission (Maximum Permissions) ရှိပါတယ်
+။Directory (ဖိုဒါ) တစ်ခုအတွက် အမြင့်ဆုံးက = 777File (ဖိုင်) 
+တစ်ခုအတွက် အမြင့်ဆုံးက = 666 (ဖိုင်အသစ်တွေမှာ လုံခြုံရေးအရ execute x ခွင့်ပြုချက် မပါဝင်လို့ပါ)
+umask ဆိုတာ အဲဒီ အမြင့်ဆုံး Permission ထဲကနေ နှုတ်ပယ်ရမယ့် တန်ဖိုး ဖြစ်ပါတယ်။
+{အမှန်တကယ်ရမယ့် Permission} = {အမြင့်ဆုံး Permission} - {Umask တန်ဖိုး}
+
+
+၁။ SUID (Set User ID - 4)
+ရည်ရွယ်ချက်: သာမန် User တစ်ယောက်အနေနဲ့ root ပိုင်တဲ့ ဖိုင်တစ်ခုကို အသုံးပြုချင်တဲ့အခါ (ဥပမာ- passwd command) SUID ကို သုံးပါတယ်။
+
+ဥပမာ: /usr/bin/passwd ဖိုင်ကို ကြည့်လိုက်ရင် Permission နေရာမှာ rws ဆိုတာကို တွေ့ရပါမယ်။
+ ဒါကြောင့် သာမန် User ဟာ ကိုယ့် password ကို ကိုယ်တိုင်ပြောင်းတဲ့အခါ root အဆင့်မြင့်ခွင့်ပြုချက်ကို ခဏတာ ရရှိသွားတာ ဖြစ်ပါတယ်။
+
+Command: chmod 4755 filename သို့မဟုတ် chmod u+s filename
+
+၂။ SGID (Set Group ID - 2)
+ရည်ရွယ်ချက်: Shared Directory (အဖွဲ့လိုက်သုံးတဲ့ Folder) တွေမှာ အသုံးပြုပါတယ်။ ဖိုင်တွေအားလုံးကို Group တစ်ခုတည်းကပဲ ပိုင်ဆိုင်အောင် လုပ်ပေးတာပါ။
+
+ဥပမာ: Project Team တစ်ခုအတွက် Folder တစ်ခုဆောက်ထားပြီး SGID ပေးထားမယ်ဆိုရင်၊ 
+အဖွဲ့ဝင် A ဆောက်တဲ့ဖိုင်ရော၊ အဖွဲ့ဝင် B ဆောက်တဲ့ဖိုင်ရော အားလုံးဟာ အဲဒီ Group ရဲ့ ပိုင်ဆိုင်မှုအောက်မှာပဲ ရှိနေမှာ ဖြစ်ပါတယ်။
+
+Command: chmod 2775 directoryname သို့မဟုတ် chmod g+s directoryname
+
+၃။ Sticky Bit (1)
+ရည်ရွယ်ချက်: /tmp လိုမျိုး နေရာမျိုးမှာ သုံးပါတယ်။ လူတိုင်းက ဖိုင်ဖန်တီးနိုင်ပေမဲ့ ကိုယ်ပိုင်ဖိုင်ကိုပဲ ကိုယ်ပြန်ဖျက်လို့ရအောင် ကာကွယ်ပေးတာပါ။
+
+ဥပမာ: /tmp folder ကို ls -ld /tmp နဲ့ စစ်ကြည့်ရင် နောက်ဆုံးမှာ t ဆိုတဲ့ character ကို တွေ့ရပါမယ်။
+ ဒါက တခြားသူရဲ့ ဖိုင်ကို ဝင်မဖျက်နိုင်အောင် တားဆီးထားတာပါ။
+
+Command: chmod 1777 directoryname သို့မဟုတ် chmod +t directoryname

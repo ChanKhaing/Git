@@ -1,7 +1,22 @@
 14.7.2026
 #### user and group management 
 useradd mgmg (you want to create you need sudo power) and what really  happen this process behind
+
+
+
 /etc/passwd || /etc/group || /home(homedictory add) || /etc/passwd
+/etc/passwd (Correct! User account info is here)
+
+/etc/group (Correct! A private group for the user is created here)
+
+/etc/shadow (Correct! You wrote "shallow", but it is /etc/shadow. This is where the encrypted password goes)
+
+/home/username (Only if you used -m or default settings in /etc/login.defs)
+
+The 5th one you weren't clear on: It is /etc/skel (Skeleton directory).
+ When a home directory is created, Linux copies hidden startup files 
+ (like .bashrc, .profile, .bash_logout) from /etc/skel into the new user's home directory.
+  This is what sets up their bash environment
 when os install you create the acc is auto add in sudo gp but you adduser is not get
 
 you want to add
