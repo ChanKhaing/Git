@@ -1,0 +1,115 @@
+sending incremental file list
+created directory homechanbackup/current
+office/
+office/one.txt
+office/three.txt
+office/two.txt
+
+sent 156 bytes  received 81 bytes  474.00 bytes/sec
+total size is 34  speedup is 0.14 (DRY RUN)
+Changing time is 2026-08-05_15-43-42
+sending incremental file list
+created directory /home/chan/backup/current
+office/
+office/one.txt
+office/three.txt
+office/two.txt
+
+sent 152 bytes  received 84 bytes  472.00 bytes/sec
+total size is 34  speedup is 0.14 (DRY RUN)
+Changing time is 2026-08-05_15-45-05
+sending incremental file list
+created directory /home/chan/backup/current
+office/
+office/one.txt
+office/three.txt
+office/two.txt
+
+sent 310 bytes  received 132 bytes  884.00 bytes/sec
+total size is 34  speedup is 0.08
+Changing time is 2026-08-05_15-47-29
+sending incremental file list
+office/
+office/two.txt
+
+sent 220 bytes  received 46 bytes  532.00 bytes/sec
+total size is 54  speedup is 0.20
+Changing time is 2026-08-05_15-50-07
+sending incremental file list
+
+sent 19 bytes  received 19 bytes  76.00 bytes/sec
+total size is 0  speedup is 0.00
+Changing time is 2026-08-05_15-51-00
+sending incremental file list
+created directory /home/chan/backup/current
+office/
+office/one.txt
+office/three.txt
+office/two.txt
+
+sent 311 bytes  received 132 bytes  886.00 bytes/sec
+total size is 35  speedup is 0.08
+Changing time is 2026-08-05_15-53-41
+sending incremental file list
+created directory /home/chan/infobackup/current
+info/
+info/oneinfo.txt
+info/threeinfo.txt
+info/twoinfo.txt
+
+sent 322 bytes  received 136 bytes  916.00 bytes/sec
+total size is 35  speedup is 0.08
+Changing time is 2026-08-05_15-58-48
+sending incremental file list
+info/
+info/five.txt
+info/fourinfo.txt
+info/six.txt
+
+sent 394 bytes  received 84 bytes  956.00 bytes/sec
+total size is 67  speedup is 0.14
+Changing time is 2026-08-05_16-02-39
+sending incremental file list
+info/
+info/oneinfo.txt
+
+sent 319 bytes  received 46 bytes  730.00 bytes/sec
+total size is 101  speedup is 0.28
+Changing time is 2026-08-05_16-04-53
+sending incremental file list
+info/
+info/seven.txt
+
+sent 314 bytes  received 46 bytes  720.00 bytes/sec
+total size is 114  speedup is 0.32
+Changing time is 2026-08-05_16-06-34
+sending incremental file list
+
+sent 255 bytes  received 24 bytes  558.00 bytes/sec
+total size is 114  speedup is 0.41
+Changing time is 2026-08-05_16-07-13
+sending incremental file list
+deleting info/twoinfo.txt
+info/
+
+sent 227 bytes  received 43 bytes  540.00 bytes/sec
+total size is 103  speedup is 0.38
+Changing time is 2026-08-05_16-08-14
+sending incremental file list
+created directory /home/chan/imagebackup/current
+image/
+image/cloud.jpg
+image/doctor.jpg
+image/images.jpeg
+image/janitor.jpg
+
+sent 445,086 bytes  received 156 bytes  890,484.00 bytes/sec
+total size is 444,641  speedup is 1.00
+Changing time is 2026-08-05_16-10-52
+sending incremental file list
+image/
+image/one.txt
+
+sent 254 bytes  received 46 bytes  600.00 bytes/sec
+total size is 444,647  speedup is 1,482.16
+Changing time is 2026-08-05_16-11-48
