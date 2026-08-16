@@ -1,0 +1,8 @@
+INFO: apport (pid 59419) 2026-08-03 01:27:21,617: called for global pid 51449, signal 5, core limit 0, dump mode 2
+ERROR: apport (pid 59419) 2026-08-03 01:27:21,618: is_closing_session(): no DBUS_SESSION_BUS_ADDRESS in environment
+INFO: apport (pid 59419) 2026-08-03 01:27:21,619: executable: /opt/Outline/Outline (command line "/opt/Outline/Outline\ --enable-crashpad")
+INFO: apport (pid 59419) 2026-08-03 01:27:26,391: wrote report /var/crash/_opt_Outline_Outline.1000.crash
+INFO: apport (pid 94958) 2026-08-03 20:01:34,981: called for global pid 67510, signal 5, core limit 0, dump mode 2
+ERROR: apport (pid 94958) 2026-08-03 20:01:34,982: is_closing_session(): no DBUS_SESSION_BUS_ADDRESS in environment
+INFO: apport (pid 94958) 2026-08-03 20:01:34,984: executable: /opt/Outline/Outline (command line "/opt/Outline/Outline\ --enable-crashpad")
+ERROR: apport (pid 94958) 2026-08-03 20:01:34,995: this executable already crashed 2 times, ignoring

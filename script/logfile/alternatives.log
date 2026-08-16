@@ -1,0 +1,4 @@
+update-alternatives 2026-08-02 09:48:44: run with --remove tdbbackup /usr/bin/tdbbackup.tdbtools
+update-alternatives 2026-08-02 09:48:44: link group tdbbackup fully removed
+update-alternatives 2026-08-02 09:48:45: run with --install /usr/bin/tdbbackup tdbbackup /usr/bin/tdbbackup.tdbtools 10 --slave /usr/share/man/man8/tdbbackup.8.gz tdbbackup.8.gz /usr/share/man/man8/tdbbackup.tdbtools.8.gz
+update-alternatives 2026-08-02 09:48:45: link group tdbbackup updated to point to /usr/bin/tdbbackup.tdbtools

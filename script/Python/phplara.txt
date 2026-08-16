@@ -1,0 +1,18 @@
+you should check first 
+php --version and 
+composer --version 
+
+sudo /opt/lampp/lampp start
+Start MySQL only: sudo /opt/lampp/lampp startmysql
+
+Stop services: sudo /opt/lampp/lampp stop
+
+Restart services: sudo /opt/lampp/lampp restart
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=laravel_db
+DB_USERNAME=root
+DB_PASSWORD=
+DB_SOCKET=/opt/lampp/var/mysql/mysql.sock

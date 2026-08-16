@@ -1,0 +1,672 @@
+2026-08-02T09:49:56.865218+06:30 chan-dell pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by chan(uid=1000)
+2026-08-02T09:49:56.866376+06:30 chan-dell pkexec[9677]: chan: Executing command [USER=root] [TTY=unknown] [CWD=/home/chan] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2026-08-02T09:52:57.182322+06:30 chan-dell pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by chan(uid=1000)
+2026-08-02T09:52:57.183191+06:30 chan-dell pkexec[10320]: chan: Executing command [USER=root] [TTY=unknown] [CWD=/home/chan] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2026-08-02T10:10:14.182381+06:30 chan-dell sudo: pam_unix(sudo:session): session opened for user root(uid=0) by chan(uid=1000)
+2026-08-02T10:10:14.187660+06:30 chan-dell sudo: chan : TTY=/dev/pts/0 ; PWD=/home/chan ; USER=root ; COMMAND=/usr/bin/apt clean
+2026-08-02T10:10:14.197757+06:30 chan-dell sudo: pam_unix(sudo:session): session closed for user root
+2026-08-02T10:17:01.059865+06:30 chan-dell CRON[12358]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-02T10:17:01.065833+06:30 chan-dell CRON[12358]: pam_unix(cron:session): session closed for user root
+2026-08-02T10:22:57.734177+06:30 chan-dell pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by chan(uid=1000)
+2026-08-02T10:22:57.735529+06:30 chan-dell pkexec[12885]: chan: Executing command [USER=root] [TTY=unknown] [CWD=/home/chan] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2026-08-02T10:30:01.108742+06:30 chan-dell CRON[13831]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-02T10:30:01.117580+06:30 chan-dell CRON[13831]: pam_unix(cron:session): session closed for user root
+2026-08-02T11:03:28.105805+06:30 chan-dell systemd-logind[1026]: The system will suspend now!
+2026-08-02T11:30:52.877001+06:30 chan-dell dbus-daemon[975]: [system] Rejected send message, 1 matched rules; type="method_call", sender=":1.6" (uid=0 pid=974 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined") interface="org.bluez.GattProfile1" member="Release" error name="(unset)" requested_reply="0" destination=":1.80" (uid=1000 pid=2966 comm="/usr/bin/wireplumber" label="unconfined")
+2026-08-02T11:30:53.085023+06:30 chan-dell dbus-daemon[975]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.79" (uid=1000 pid=2966 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.6" (uid=0 pid=974 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-02T11:30:53.085618+06:30 chan-dell dbus-daemon[975]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.79" (uid=1000 pid=2966 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.6" (uid=0 pid=974 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-02T11:30:53.085815+06:30 chan-dell dbus-daemon[975]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.79" (uid=1000 pid=2966 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.6" (uid=0 pid=974 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-02T11:30:53.086615+06:30 chan-dell dbus-daemon[975]: message repeated 16 times: [ [system] Rejected send message, 0 matched rules; type="error", sender=":1.79" (uid=1000 pid=2966 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.6" (uid=0 pid=974 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")]
+2026-08-02T11:30:53.101434+06:30 chan-dell systemd-logind[1026]: Operation 'suspend' finished.
+2026-08-02T11:30:55.792547+06:30 chan-dell unix_chkpwd[16992]: password check failed for user (chan)
+2026-08-02T11:30:55.793224+06:30 chan-dell gdm-password]: pam_unix(gdm-password:auth): authentication failure; logname=chan uid=0 euid=0 tty=/dev/tty1 ruser= rhost=  user=chan
+2026-08-02T11:31:01.804679+06:30 chan-dell gdm-password]: gkr-pam: unlocked login keyring
+2026-08-02T11:31:23.437433+06:30 chan-dell CRON[17210]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-02T11:31:23.444176+06:30 chan-dell CRON[17210]: pam_unix(cron:session): session closed for user root
+2026-08-02T12:17:01.487586+06:30 chan-dell CRON[18417]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-02T12:17:01.497219+06:30 chan-dell CRON[18417]: pam_unix(cron:session): session closed for user root
+2026-08-02T12:27:22.875827+06:30 chan-dell systemd-machined[1028]: New machine qemu-1-ubuntu.
+2026-08-02T12:28:23.351810+06:30 chan-dell systemd-machined[1028]: Machine qemu-1-ubuntu terminated.
+2026-08-02T12:28:49.750518+06:30 chan-dell systemd-machined[1028]: New machine qemu-2-ubuntu.
+2026-08-02T12:29:49.850725+06:30 chan-dell systemd-machined[1028]: Machine qemu-2-ubuntu terminated.
+2026-08-02T12:30:01.529268+06:30 chan-dell CRON[20283]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-02T12:30:01.535562+06:30 chan-dell CRON[20283]: pam_unix(cron:session): session closed for user root
+2026-08-02T12:52:10.039250+06:30 chan-dell systemd-logind[1026]: The system will reboot now!
+2026-08-02T12:52:10.117278+06:30 chan-dell systemd-logind[1026]: System is rebooting.
+2026-08-02T12:52:10.207143+06:30 chan-dell gdm-password]: pam_unix(gdm-password:session): session closed for user chan
+2026-08-02T12:52:10.517660+06:30 chan-dell dbus-daemon[975]: [system] Rejected send message, 1 matched rules; type="method_call", sender=":1.6" (uid=0 pid=974 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined") interface="org.bluez.GattProfile1" member="Release" error name="(unset)" requested_reply="0" destination=":1.80" (uid=1000 pid=2966 comm="/usr/bin/wireplumber" label="unconfined")
+2026-08-02T12:52:10.538244+06:30 chan-dell systemd-logind[1026]: Session 2 logged out. Waiting for processes to exit.
+2026-08-02T12:54:07.470074+06:30 chan-dell systemd-logind[1101]: New seat seat0.
+2026-08-02T12:54:07.470088+06:30 chan-dell systemd-logind[1101]: Watching system buttons on /dev/input/event6 (Intel HID events)
+2026-08-02T12:54:07.470095+06:30 chan-dell systemd-logind[1101]: Watching system buttons on /dev/input/event7 (Intel HID 5 button array)
+2026-08-02T12:54:07.470103+06:30 chan-dell systemd-logind[1101]: Watching system buttons on /dev/input/event3 (Power Button)
+2026-08-02T12:54:07.470111+06:30 chan-dell systemd-logind[1101]: Watching system buttons on /dev/input/event1 (Power Button)
+2026-08-02T12:54:07.470114+06:30 chan-dell systemd-logind[1101]: Watching system buttons on /dev/input/event0 (Lid Switch)
+2026-08-02T12:54:07.470122+06:30 chan-dell systemd-logind[1101]: Watching system buttons on /dev/input/event2 (Sleep Button)
+2026-08-02T12:54:07.470126+06:30 chan-dell systemd-logind[1101]: Watching system buttons on /dev/input/event4 (AT Translated Set 2 keyboard)
+2026-08-02T12:54:14.309594+06:30 chan-dell gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm-greeter(uid=60578) by (uid=0)
+2026-08-02T12:54:14.334131+06:30 chan-dell systemd-logind[1101]: New session 'c1' of user 'gdm-greeter' with class 'greeter' and type 'wayland'.
+2026-08-02T12:54:14.423904+06:30 chan-dell (systemd): pam_unix(systemd-user:session): session opened for user gdm-greeter(uid=60578) by gdm-greeter(uid=0)
+2026-08-02T12:54:14.426840+06:30 chan-dell systemd-logind[1101]: New session '1' of user 'gdm-greeter' with class 'manager-early' and type 'unspecified'.
+2026-08-02T12:54:55.925545+06:30 chan-dell gdm-password]: gkr-pam: unable to locate daemon control file
+2026-08-02T12:54:55.925719+06:30 chan-dell gdm-password]: gkr-pam: stashed password to try later in open session
+2026-08-02T12:54:55.938065+06:30 chan-dell gdm-password]: pam_unix(gdm-password:session): session opened for user chan(uid=1000) by chan(uid=0)
+2026-08-02T12:54:55.956943+06:30 chan-dell systemd-logind[1101]: New session '2' of user 'chan' with class 'user' and type 'wayland'.
+2026-08-02T12:54:56.001340+06:30 chan-dell (systemd): pam_unix(systemd-user:session): session opened for user chan(uid=1000) by chan(uid=0)
+2026-08-02T12:54:56.002635+06:30 chan-dell systemd-logind[1101]: New session '3' of user 'chan' with class 'manager' and type 'unspecified'.
+2026-08-02T12:54:56.399936+06:30 chan-dell gdm-password]: gkr-pam: unlocked login keyring
+2026-08-02T12:55:02.376905+06:30 chan-dell gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm-greeter
+2026-08-02T12:55:02.386775+06:30 chan-dell systemd-logind[1101]: Session c1 logged out. Waiting for processes to exit.
+2026-08-02T12:55:02.388394+06:30 chan-dell systemd-logind[1101]: Removed session c1.
+2026-08-02T12:55:07.325030+06:30 chan-dell pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by chan(uid=1000)
+2026-08-02T12:55:07.328969+06:30 chan-dell pkexec[4460]: chan: Executing command [USER=root] [TTY=unknown] [CWD=/home/chan] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2026-08-02T12:55:07.831658+06:30 chan-dell PackageKit: uid 1000 is trying to obtain org.freedesktop.packagekit.system-sources-refresh auth (only_trusted:0)
+2026-08-02T12:55:07.837356+06:30 chan-dell PackageKit: uid 1000 obtained auth for org.freedesktop.packagekit.system-sources-refresh
+2026-08-02T12:55:12.549744+06:30 chan-dell systemd-logind[1101]: Removed session 1.
+2026-08-02T12:55:12.550179+06:30 chan-dell (sd-pam): pam_unix(systemd-user:session): session closed for user gdm-greeter
+2026-08-02T12:58:05.179878+06:30 chan-dell pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by chan(uid=1000)
+2026-08-02T12:58:05.186452+06:30 chan-dell pkexec[5444]: chan: Executing command [USER=root] [TTY=unknown] [CWD=/home/chan] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2026-08-02T13:17:01.145847+06:30 chan-dell CRON[6867]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-02T13:17:01.155746+06:30 chan-dell CRON[6867]: pam_unix(cron:session): session closed for user root
+2026-08-02T13:28:00.116466+06:30 chan-dell systemd-logind[1101]: The system will suspend now!
+2026-08-02T13:40:54.371512+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 1 matched rules; type="method_call", sender=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined") interface="org.bluez.GattProfile1" member="Release" error name="(unset)" requested_reply="0" destination=":1.81" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined")
+2026-08-02T13:40:54.472529+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-02T13:40:54.473559+06:30 chan-dell dbus-daemon[1069]: message repeated 18 times: [ [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")]
+2026-08-02T13:40:54.490974+06:30 chan-dell systemd-logind[1101]: Operation 'suspend' finished.
+2026-08-02T13:40:57.156183+06:30 chan-dell gdm-password]: gkr-pam: unlocked login keyring
+2026-08-02T13:41:52.242380+06:30 chan-dell CRON[9342]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-02T13:41:52.245562+06:30 chan-dell CRON[9342]: pam_unix(cron:session): session closed for user root
+2026-08-02T13:45:49.573645+06:30 chan-dell systemd-machined[1102]: New machine qemu-1-parrot-security.
+2026-08-02T13:50:15.497242+06:30 chan-dell systemd-machined[1102]: Machine qemu-1-parrot-security terminated.
+2026-08-02T13:59:33.631661+06:30 chan-dell systemd-machined[1102]: New machine qemu-2-debian12.
+2026-08-02T14:01:12.926280+06:30 chan-dell systemd-machined[1102]: Machine qemu-2-debian12 terminated.
+2026-08-02T14:08:41.305876+06:30 chan-dell systemd-machined[1102]: New machine qemu-3-debian12.
+2026-08-02T14:12:23.739476+06:30 chan-dell systemd-machined[1102]: Machine qemu-3-debian12 terminated.
+2026-08-02T14:16:54.519001+06:30 chan-dell systemd-machined[1102]: New machine qemu-4-parrot.
+2026-08-02T14:17:01.144575+06:30 chan-dell CRON[21247]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-02T14:17:01.151542+06:30 chan-dell CRON[21247]: pam_unix(cron:session): session closed for user root
+2026-08-02T14:20:21.747993+06:30 chan-dell systemd-machined[1102]: Machine qemu-4-parrot terminated.
+2026-08-02T14:30:01.186205+06:30 chan-dell CRON[25459]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-02T14:30:01.195834+06:30 chan-dell CRON[25459]: pam_unix(cron:session): session closed for user root
+2026-08-02T14:34:30.004628+06:30 chan-dell systemd-machined[1102]: New machine qemu-5-rocky9.
+2026-08-02T15:09:32.339405+06:30 chan-dell systemd-machined[1102]: Machine qemu-5-rocky9 terminated.
+2026-08-02T15:09:33.116115+06:30 chan-dell systemd-machined[1102]: New machine qemu-6-rocky9.
+2026-08-02T15:13:16.327734+06:30 chan-dell systemd-logind[1101]: Lid closed.
+2026-08-02T15:13:16.340467+06:30 chan-dell systemd-logind[1101]: Suspending...
+2026-08-02T15:41:39.000130+06:30 chan-dell systemd-logind[1101]: Lid opened.
+2026-08-02T15:41:39.292111+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 1 matched rules; type="method_call", sender=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined") interface="org.bluez.GattProfile1" member="Release" error name="(unset)" requested_reply="0" destination=":1.81" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined")
+2026-08-02T15:41:39.485421+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-02T15:41:39.485811+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-02T15:41:39.487114+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-02T15:41:39.487334+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-02T15:41:39.487522+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-02T15:41:39.491403+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-02T15:41:39.491741+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-02T15:41:39.493926+06:30 chan-dell dbus-daemon[1069]: message repeated 12 times: [ [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")]
+2026-08-02T15:41:39.513147+06:30 chan-dell systemd-logind[1101]: Operation 'suspend' finished.
+2026-08-02T15:41:42.995536+06:30 chan-dell gdm-password]: gkr-pam: unlocked login keyring
+2026-08-02T15:42:20.549524+06:30 chan-dell CRON[29892]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-02T15:42:20.555630+06:30 chan-dell CRON[29892]: pam_unix(cron:session): session closed for user root
+2026-08-02T15:56:38.287496+06:30 chan-dell sudo: pam_unix(sudo:session): session opened for user root(uid=0) by chan(uid=1000)
+2026-08-02T15:56:38.293271+06:30 chan-dell sudo: chan : TTY=/dev/pts/1 ; PWD=/home/chan ; USER=root ; COMMAND=/usr/bin/cat /etc/netplan/90-NM-4229f38f-fb0e-49ee-b449-21bf6bb5a66b.yaml /etc/netplan/90-NM-ac07db7c-e6e4-4b55-8ab0-c4029e8da00b.yaml
+2026-08-02T15:56:38.293350+06:30 chan-dell sudo: pam_unix(sudo:session): session closed for user root
+2026-08-02T16:01:36.981548+06:30 chan-dell systemd-machined[1102]: Machine qemu-6-rocky9 terminated.
+2026-08-02T16:16:29.672840+06:30 chan-dell systemd-machined[1102]: New machine qemu-7-debian12.
+2026-08-02T16:17:02.006011+06:30 chan-dell CRON[35636]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-02T16:17:02.010867+06:30 chan-dell CRON[35636]: pam_unix(cron:session): session closed for user root
+2026-08-02T16:30:01.020739+06:30 chan-dell CRON[36148]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-02T16:30:01.023411+06:30 chan-dell CRON[36148]: pam_unix(cron:session): session closed for user root
+2026-08-02T16:40:39.824720+06:30 chan-dell systemd-machined[1102]: Machine qemu-7-debian12 terminated.
+2026-08-02T16:40:40.685996+06:30 chan-dell systemd-machined[1102]: New machine qemu-8-debian12.
+2026-08-02T16:46:37.039278+06:30 chan-dell systemd-machined[1102]: Machine qemu-8-debian12 terminated.
+2026-08-02T16:47:25.807912+06:30 chan-dell systemd-machined[1102]: New machine qemu-9-debian12.
+2026-08-02T16:55:40.607490+06:30 chan-dell systemd-machined[1102]: Machine qemu-9-debian12 terminated.
+2026-08-02T16:57:09.324432+06:30 chan-dell sudo: pam_unix(sudo:session): session opened for user root(uid=0) by chan(uid=1000)
+2026-08-02T16:57:09.329393+06:30 chan-dell sudo: chan : TTY=/dev/pts/0 ; PWD=/home/chan ; USER=root ; COMMAND=/usr/bin/apt clean
+2026-08-02T16:57:09.362937+06:30 chan-dell sudo: pam_unix(sudo:session): session closed for user root
+2026-08-02T16:58:37.828857+06:30 chan-dell systemd-logind[1101]: The system will suspend now!
+2026-08-02T17:44:34.867105+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 1 matched rules; type="method_call", sender=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined") interface="org.bluez.GattProfile1" member="Release" error name="(unset)" requested_reply="0" destination=":1.81" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined")
+2026-08-02T17:44:35.041279+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-02T17:44:35.041523+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-02T17:44:35.041794+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-02T17:44:35.041947+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-02T17:44:35.042116+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-02T17:44:35.042808+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-02T17:44:35.043005+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-02T17:44:35.043183+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-02T17:44:35.043335+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-02T17:44:35.046254+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-02T17:44:35.046891+06:30 chan-dell dbus-daemon[1069]: message repeated 9 times: [ [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")]
+2026-08-02T17:44:35.057055+06:30 chan-dell systemd-logind[1101]: Operation 'suspend' finished.
+2026-08-02T17:44:38.073878+06:30 chan-dell gdm-password]: gkr-pam: unlocked login keyring
+2026-08-02T17:44:55.628068+06:30 chan-dell CRON[40108]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-02T17:44:55.646148+06:30 chan-dell CRON[40108]: pam_unix(cron:session): session closed for user root
+2026-08-02T17:46:12.559880+06:30 chan-dell pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by chan(uid=1000)
+2026-08-02T17:46:12.562157+06:30 chan-dell pkexec[40205]: chan: Executing command [USER=root] [TTY=unknown] [CWD=/home/chan] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2026-08-02T17:50:36.842766+06:30 chan-dell systemd-logind[1101]: The system will suspend now!
+2026-08-02T17:50:38.420308+06:30 chan-dell systemd-logind[1101]: Lid closed.
+2026-08-02T19:18:12.724304+06:30 chan-dell systemd-logind[1101]: Lid opened.
+2026-08-02T19:18:12.821021+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 1 matched rules; type="method_call", sender=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined") interface="org.bluez.GattProfile1" member="Release" error name="(unset)" requested_reply="0" destination=":1.81" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined")
+2026-08-02T19:18:13.152413+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-02T19:18:13.164632+06:30 chan-dell dbus-daemon[1069]: message repeated 2 times: [ [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")]
+2026-08-02T19:18:13.164896+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-02T19:18:13.165029+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-02T19:18:13.165148+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-02T19:18:13.165356+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-02T19:18:13.165914+06:30 chan-dell dbus-daemon[1069]: message repeated 12 times: [ [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")]
+2026-08-02T19:18:13.183469+06:30 chan-dell systemd-logind[1101]: Operation 'suspend' finished.
+2026-08-02T19:18:17.184237+06:30 chan-dell unix_chkpwd[40909]: password check failed for user (chan)
+2026-08-02T19:18:17.184722+06:30 chan-dell gdm-password]: pam_unix(gdm-password:auth): authentication failure; logname=chan uid=0 euid=0 tty=/dev/tty1 ruser= rhost=  user=chan
+2026-08-02T19:18:23.552922+06:30 chan-dell gdm-password]: gkr-pam: unlocked login keyring
+2026-08-02T19:18:34.595221+06:30 chan-dell CRON[41069]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-02T19:18:34.606649+06:30 chan-dell CRON[41069]: pam_unix(cron:session): session closed for user root
+2026-08-02T19:30:01.633571+06:30 chan-dell CRON[41564]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-02T19:30:01.641720+06:30 chan-dell CRON[41564]: pam_unix(cron:session): session closed for user root
+2026-08-02T19:52:10.413380+06:30 chan-dell systemd-machined[1102]: New machine qemu-10-ubuntu.
+2026-08-02T20:17:01.678156+06:30 chan-dell CRON[44251]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-02T20:17:01.690339+06:30 chan-dell CRON[44251]: pam_unix(cron:session): session closed for user root
+2026-08-02T20:30:01.715464+06:30 chan-dell CRON[45062]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-02T20:30:01.720215+06:30 chan-dell CRON[45062]: pam_unix(cron:session): session closed for user root
+2026-08-02T20:38:43.380875+06:30 chan-dell systemd-logind[1101]: The system will suspend now!
+2026-08-02T20:38:51.868857+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 1 matched rules; type="method_call", sender=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined") interface="org.bluez.GattProfile1" member="Release" error name="(unset)" requested_reply="0" destination=":1.81" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined")
+2026-08-02T20:38:52.221194+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-02T20:38:52.225682+06:30 chan-dell dbus-daemon[1069]: message repeated 18 times: [ [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")]
+2026-08-02T20:38:52.238314+06:30 chan-dell systemd-logind[1101]: Operation 'suspend' finished.
+2026-08-02T20:38:55.603228+06:30 chan-dell gdm-password]: gkr-pam: unlocked login keyring
+2026-08-02T21:16:26.343197+06:30 chan-dell systemd-machined[1102]: Machine qemu-10-ubuntu terminated.
+2026-08-02T21:17:01.341010+06:30 chan-dell CRON[47535]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-02T21:17:01.378428+06:30 chan-dell CRON[47535]: pam_unix(cron:session): session closed for user root
+2026-08-02T21:30:01.411886+06:30 chan-dell CRON[48677]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-02T21:30:01.418754+06:30 chan-dell CRON[48677]: pam_unix(cron:session): session closed for user root
+2026-08-02T22:15:59.365170+06:30 chan-dell sudo: pam_unix(sudo:session): session opened for user root(uid=0) by chan(uid=1000)
+2026-08-02T22:15:59.365975+06:30 chan-dell sudo: chan : TTY=/dev/pts/1 ; PWD=/home/chan ; USER=root ; COMMAND=/usr/bin/apt install nginx
+2026-08-02T22:16:27.552550+06:30 chan-dell sudo: pam_unix(sudo:session): session closed for user root
+2026-08-02T22:16:48.794867+06:30 chan-dell pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by chan(uid=1000)
+2026-08-02T22:16:48.795901+06:30 chan-dell pkexec[51001]: chan: Executing command [USER=root] [TTY=unknown] [CWD=/home/chan] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2026-08-02T22:17:01.451969+06:30 chan-dell CRON[51009]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-02T22:17:01.460103+06:30 chan-dell CRON[51009]: pam_unix(cron:session): session closed for user root
+2026-08-02T22:30:01.474586+06:30 chan-dell CRON[52000]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-02T22:30:01.477776+06:30 chan-dell CRON[52000]: pam_unix(cron:session): session closed for user root
+2026-08-02T22:33:50.055046+06:30 chan-dell systemd-logind[1101]: The system will suspend now!
+2026-08-02T23:11:03.761523+06:30 chan-dell systemd-logind[1101]: Power key pressed short.
+2026-08-02T23:11:03.856035+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 1 matched rules; type="method_call", sender=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined") interface="org.bluez.GattProfile1" member="Release" error name="(unset)" requested_reply="0" destination=":1.81" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined")
+2026-08-02T23:11:04.153679+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-02T23:11:04.153867+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-02T23:11:04.154019+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-02T23:11:04.154995+06:30 chan-dell dbus-daemon[1069]: message repeated 16 times: [ [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")]
+2026-08-02T23:11:04.172125+06:30 chan-dell systemd-logind[1101]: Operation 'suspend' finished.
+2026-08-02T23:11:06.670369+06:30 chan-dell gdm-password]: gkr-pam: unlocked login keyring
+2026-08-02T23:11:20.749048+06:30 chan-dell systemd-machined[1102]: New machine qemu-11-rocky9.
+2026-08-02T23:17:01.665838+06:30 chan-dell CRON[53119]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-02T23:17:01.672773+06:30 chan-dell CRON[53119]: pam_unix(cron:session): session closed for user root
+2026-08-02T23:30:01.698395+06:30 chan-dell CRON[53282]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-02T23:30:01.702358+06:30 chan-dell CRON[53282]: pam_unix(cron:session): session closed for user root
+2026-08-03T00:17:01.726779+06:30 chan-dell CRON[53985]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-03T00:17:01.728969+06:30 chan-dell CRON[53985]: pam_unix(cron:session): session closed for user root
+2026-08-03T00:20:22.362721+06:30 chan-dell systemd-machined[1102]: Machine qemu-11-rocky9 terminated.
+2026-08-03T00:21:41.910296+06:30 chan-dell gnome-keyring-daemon[2971]: asked to register item /org/freedesktop/secrets/collection/login/5, but it's already registered
+2026-08-03T00:29:19.669016+06:30 chan-dell systemd-logind[1101]: The system will suspend now!
+2026-08-03T01:13:34.872392+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 1 matched rules; type="method_call", sender=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined") interface="org.bluez.GattProfile1" member="Release" error name="(unset)" requested_reply="0" destination=":1.81" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined")
+2026-08-03T01:13:35.024647+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T01:13:35.024925+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T01:13:35.028620+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T01:13:35.030131+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T01:13:35.031043+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T01:13:35.032074+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T01:13:35.033255+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T01:13:35.033503+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T01:13:35.033647+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T01:13:35.033785+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T01:13:35.033932+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T01:13:35.034089+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T01:13:35.034519+06:30 chan-dell dbus-daemon[1069]: message repeated 7 times: [ [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2973 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")]
+2026-08-03T01:13:35.044003+06:30 chan-dell systemd-logind[1101]: Operation 'suspend' finished.
+2026-08-03T01:13:37.982565+06:30 chan-dell gdm-password]: gkr-pam: unlocked login keyring
+2026-08-03T01:17:01.517132+06:30 chan-dell CRON[56613]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-03T01:17:01.531010+06:30 chan-dell CRON[56613]: pam_unix(cron:session): session closed for user root
+2026-08-03T01:26:05.356262+06:30 chan-dell gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm-greeter(uid=60579) by (uid=0)
+2026-08-03T01:26:05.382110+06:30 chan-dell systemd-logind[1101]: New session 'c2' of user 'gdm-greeter' with class 'greeter' and type 'wayland'.
+2026-08-03T01:26:05.451434+06:30 chan-dell (systemd): pam_unix(systemd-user:session): session opened for user gdm-greeter(uid=60579) by gdm-greeter(uid=0)
+2026-08-03T01:26:05.452573+06:30 chan-dell systemd-logind[1101]: New session '24' of user 'gdm-greeter' with class 'manager-early' and type 'unspecified'.
+2026-08-03T01:26:17.463137+06:30 chan-dell gdm-password]: gkr-pam: unlocked login keyring
+2026-08-03T01:26:30.007984+06:30 chan-dell gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm-greeter
+2026-08-03T01:26:30.033705+06:30 chan-dell systemd-logind[1101]: Session c2 logged out. Waiting for processes to exit.
+2026-08-03T01:26:30.041360+06:30 chan-dell systemd-logind[1101]: Removed session c2.
+2026-08-03T01:26:40.308441+06:30 chan-dell systemd-logind[1101]: Removed session 24.
+2026-08-03T01:27:22.245378+06:30 chan-dell gdm-password]: pam_unix(gdm-password:session): session closed for user chan
+2026-08-03T01:27:22.310591+06:30 chan-dell systemd-logind[1101]: Session 2 logged out. Waiting for processes to exit.
+2026-08-03T01:27:22.404988+06:30 chan-dell systemd-logind[1101]: Removed session 2.
+2026-08-03T01:27:22.452309+06:30 chan-dell gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm-greeter(uid=60580) by (uid=0)
+2026-08-03T01:27:22.472333+06:30 chan-dell systemd-logind[1101]: New session 'c3' of user 'gdm-greeter' with class 'greeter' and type 'wayland'.
+2026-08-03T01:27:22.557905+06:30 chan-dell (systemd): pam_unix(systemd-user:session): session opened for user gdm-greeter(uid=60580) by gdm-greeter(uid=0)
+2026-08-03T01:27:22.562168+06:30 chan-dell systemd-logind[1101]: New session '25' of user 'gdm-greeter' with class 'manager-early' and type 'unspecified'.
+2026-08-03T01:27:32.797747+06:30 chan-dell systemd-logind[1101]: Removed session 3.
+2026-08-03T01:27:32.798723+06:30 chan-dell (sd-pam): pam_unix(systemd-user:session): session closed for user chan
+2026-08-03T01:27:33.823758+06:30 chan-dell gdm-password]: gkr-pam: unable to locate daemon control file
+2026-08-03T01:27:33.824018+06:30 chan-dell gdm-password]: gkr-pam: stashed password to try later in open session
+2026-08-03T01:27:33.850590+06:30 chan-dell gdm-password]: pam_unix(gdm-password:session): session opened for user kyaw(uid=1002) by kyaw(uid=0)
+2026-08-03T01:27:33.885431+06:30 chan-dell systemd-logind[1101]: New session '26' of user 'kyaw' with class 'user' and type 'wayland'.
+2026-08-03T01:27:33.966626+06:30 chan-dell (systemd): pam_unix(systemd-user:session): session opened for user kyaw(uid=1002) by kyaw(uid=0)
+2026-08-03T01:27:33.969380+06:30 chan-dell systemd-logind[1101]: New session '27' of user 'kyaw' with class 'manager' and type 'unspecified'.
+2026-08-03T01:27:34.419551+06:30 chan-dell gdm-password]: gkr-pam: unlocked login keyring
+2026-08-03T01:27:41.387895+06:30 chan-dell gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm-greeter
+2026-08-03T01:27:41.400055+06:30 chan-dell systemd-logind[1101]: Session c3 logged out. Waiting for processes to exit.
+2026-08-03T01:27:41.404274+06:30 chan-dell systemd-logind[1101]: Removed session c3.
+2026-08-03T01:27:51.891782+06:30 chan-dell systemd-logind[1101]: Removed session 25.
+2026-08-03T01:27:51.896822+06:30 chan-dell (sd-pam): pam_unix(systemd-user:session): session closed for user gdm-greeter
+2026-08-03T01:27:53.287044+06:30 chan-dell gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm-greeter(uid=60581) by (uid=0)
+2026-08-03T01:27:53.309867+06:30 chan-dell systemd-logind[1101]: New session 'c4' of user 'gdm-greeter' with class 'greeter' and type 'wayland'.
+2026-08-03T01:27:53.380617+06:30 chan-dell (systemd): pam_unix(systemd-user:session): session opened for user gdm-greeter(uid=60581) by gdm-greeter(uid=0)
+2026-08-03T01:27:53.382400+06:30 chan-dell systemd-logind[1101]: New session '28' of user 'gdm-greeter' with class 'manager-early' and type 'unspecified'.
+2026-08-03T01:28:03.393061+06:30 chan-dell gdm-password]: gkr-pam: unable to locate daemon control file
+2026-08-03T01:28:03.393362+06:30 chan-dell gdm-password]: gkr-pam: stashed password to try later in open session
+2026-08-03T01:28:03.430548+06:30 chan-dell gdm-password]: pam_unix(gdm-password:session): session opened for user chan(uid=1000) by chan(uid=0)
+2026-08-03T01:28:03.478729+06:30 chan-dell systemd-logind[1101]: New session '29' of user 'chan' with class 'user' and type 'wayland'.
+2026-08-03T01:28:03.600995+06:30 chan-dell (systemd): pam_unix(systemd-user:session): session opened for user chan(uid=1000) by chan(uid=0)
+2026-08-03T01:28:03.606229+06:30 chan-dell systemd-logind[1101]: New session '30' of user 'chan' with class 'manager' and type 'unspecified'.
+2026-08-03T01:28:04.318069+06:30 chan-dell gdm-password]: gkr-pam: unlocked login keyring
+2026-08-03T01:28:10.210927+06:30 chan-dell gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm-greeter
+2026-08-03T01:28:10.222372+06:30 chan-dell systemd-logind[1101]: Session c4 logged out. Waiting for processes to exit.
+2026-08-03T01:28:10.228764+06:30 chan-dell systemd-logind[1101]: Removed session c4.
+2026-08-03T01:28:13.129726+06:30 chan-dell PackageKit: uid 1000 is trying to obtain org.freedesktop.packagekit.system-sources-refresh auth (only_trusted:0)
+2026-08-03T01:28:13.143757+06:30 chan-dell PackageKit: uid 1000 obtained auth for org.freedesktop.packagekit.system-sources-refresh
+2026-08-03T01:28:14.330431+06:30 chan-dell pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by chan(uid=1000)
+2026-08-03T01:28:14.332391+06:30 chan-dell pkexec[65344]: chan: Executing command [USER=root] [TTY=unknown] [CWD=/home/chan] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2026-08-03T01:28:20.574001+06:30 chan-dell systemd-logind[1101]: Removed session 28.
+2026-08-03T01:28:20.576019+06:30 chan-dell (sd-pam): pam_unix(systemd-user:session): session closed for user gdm-greeter
+2026-08-03T01:50:58.047797+06:30 chan-dell sudo: pam_unix(sudo:session): session opened for user root(uid=0) by chan(uid=1000)
+2026-08-03T01:50:58.053853+06:30 chan-dell sudo: chan : TTY=/dev/pts/2 ; PWD=/home/chan/Desktop/Git/Bash/BashBasic ; USER=root ; COMMAND=/usr/bin/chmod +x ifelse.sh
+2026-08-03T01:50:58.053920+06:30 chan-dell sudo: pam_unix(sudo:session): session closed for user root
+2026-08-03T01:56:17.271137+06:30 chan-dell systemd-logind[1101]: The system will suspend now!
+2026-08-03T09:44:27.938085+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 1 matched rules; type="method_call", sender=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined") interface="org.bluez.GattProfile1" member="Release" error name="(unset)" requested_reply="0" destination=":1.360" (uid=1002 pid=60948 comm="/usr/bin/wireplumber" label="unconfined")
+2026-08-03T09:44:27.948016+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 1 matched rules; type="method_call", sender=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined") interface="org.bluez.GattProfile1" member="Release" error name="(unset)" requested_reply="0" destination=":1.441" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined")
+2026-08-03T09:44:28.271078+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T09:44:28.271845+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T09:44:28.272031+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T09:44:28.272175+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T09:44:28.275683+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T09:44:28.275817+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T09:44:28.275931+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T09:44:28.276072+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T09:44:28.278661+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T09:44:28.278855+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T09:44:28.278976+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T09:44:28.279594+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T09:44:28.279747+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T09:44:28.279890+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T09:44:28.280130+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T09:44:28.280304+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T09:44:28.280489+06:30 chan-dell dbus-daemon[1069]: message repeated 3 times: [ [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")]
+2026-08-03T09:44:28.290777+06:30 chan-dell systemd-logind[1101]: Operation 'suspend' finished.
+2026-08-03T09:44:32.692312+06:30 chan-dell gdm-password]: gkr-pam: unlocked login keyring
+2026-08-03T10:09:11.556176+06:30 chan-dell sudo: pam_unix(sudo:session): session opened for user root(uid=0) by chan(uid=1000)
+2026-08-03T10:09:11.558258+06:30 chan-dell sudo: chan : TTY=/dev/pts/2 ; PWD=/home/chan/Desktop/script ; USER=root ; COMMAND=/usr/bin/chmod +x hello
+2026-08-03T10:09:11.562965+06:30 chan-dell sudo: pam_unix(sudo:session): session closed for user root
+2026-08-03T10:17:01.020235+06:30 chan-dell CRON[69521]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-03T10:17:01.027938+06:30 chan-dell CRON[69521]: pam_unix(cron:session): session closed for user root
+2026-08-03T10:30:01.039786+06:30 chan-dell CRON[70084]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-03T10:30:01.042474+06:30 chan-dell CRON[70084]: pam_unix(cron:session): session closed for user root
+2026-08-03T11:09:21.963157+06:30 chan-dell systemd-logind[1101]: Lid closed.
+2026-08-03T11:09:21.970976+06:30 chan-dell systemd-logind[1101]: Suspending...
+2026-08-03T11:17:26.960392+06:30 chan-dell systemd-logind[1101]: Lid opened.
+2026-08-03T11:17:27.144190+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 1 matched rules; type="method_call", sender=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined") interface="org.bluez.GattProfile1" member="Release" error name="(unset)" requested_reply="0" destination=":1.441" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined")
+2026-08-03T11:17:27.323836+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T11:17:27.328946+06:30 chan-dell dbus-daemon[1069]: message repeated 2 times: [ [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")]
+2026-08-03T11:17:27.329186+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T11:17:27.329368+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T11:17:27.329538+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T11:17:27.329662+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T11:17:27.329788+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T11:17:27.330992+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T11:17:27.332187+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T11:17:27.335704+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T11:17:27.338571+06:30 chan-dell dbus-daemon[1069]: message repeated 8 times: [ [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")]
+2026-08-03T11:17:27.563386+06:30 chan-dell systemd-logind[1101]: Operation 'suspend' finished.
+2026-08-03T11:17:31.302044+06:30 chan-dell gdm-password]: gkr-pam: unlocked login keyring
+2026-08-03T11:28:24.004827+06:30 chan-dell sudo: pam_unix(sudo:session): session opened for user root(uid=0) by chan(uid=1000)
+2026-08-03T11:28:24.005350+06:30 chan-dell sudo: chan : TTY=/dev/pts/1 ; PWD=/home/chan/Desktop/script ; USER=root ; COMMAND=/usr/bin/chmod +x hello.sh
+2026-08-03T11:28:24.016805+06:30 chan-dell sudo: pam_unix(sudo:session): session closed for user root
+2026-08-03T11:30:01.190137+06:30 chan-dell CRON[72978]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-03T11:30:01.198187+06:30 chan-dell CRON[72978]: pam_unix(cron:session): session closed for user root
+2026-08-03T11:50:50.988312+06:30 chan-dell systemd-logind[1101]: Lid closed.
+2026-08-03T11:50:50.998618+06:30 chan-dell systemd-logind[1101]: Suspending...
+2026-08-03T12:02:16.773150+06:30 chan-dell systemd-logind[1101]: Lid opened.
+2026-08-03T12:02:16.952081+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 1 matched rules; type="method_call", sender=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined") interface="org.bluez.GattProfile1" member="Release" error name="(unset)" requested_reply="0" destination=":1.441" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined")
+2026-08-03T12:02:17.193097+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T12:02:17.194754+06:30 chan-dell dbus-daemon[1069]: message repeated 18 times: [ [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")]
+2026-08-03T12:02:17.209503+06:30 chan-dell systemd-logind[1101]: Operation 'suspend' finished.
+2026-08-03T12:02:20.056351+06:30 chan-dell gdm-password]: gkr-pam: unlocked login keyring
+2026-08-03T12:02:42.984692+06:30 chan-dell pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by chan(uid=1000)
+2026-08-03T12:02:42.985502+06:30 chan-dell pkexec[75272]: chan: Executing command [USER=root] [TTY=unknown] [CWD=/home/chan] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2026-08-03T12:12:39.071786+06:30 chan-dell systemd-logind[1101]: Lid closed.
+2026-08-03T12:12:39.080073+06:30 chan-dell systemd-logind[1101]: Suspending...
+2026-08-03T12:40:30.900695+06:30 chan-dell systemd-logind[1101]: Lid opened.
+2026-08-03T12:40:30.952835+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 1 matched rules; type="method_call", sender=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined") interface="org.bluez.GattProfile1" member="Release" error name="(unset)" requested_reply="0" destination=":1.441" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined")
+2026-08-03T12:40:31.153815+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T12:40:31.154024+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T12:40:31.156611+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T12:40:31.157396+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T12:40:31.157660+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T12:40:31.157883+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T12:40:31.158402+06:30 chan-dell dbus-daemon[1069]: message repeated 13 times: [ [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")]
+2026-08-03T12:40:31.191905+06:30 chan-dell systemd-logind[1101]: Operation 'suspend' finished.
+2026-08-03T12:40:34.232768+06:30 chan-dell gdm-password]: gkr-pam: unlocked login keyring
+2026-08-03T12:40:50.866908+06:30 chan-dell CRON[76305]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-03T12:40:50.875134+06:30 chan-dell CRON[76305]: pam_unix(cron:session): session closed for user root
+2026-08-03T13:17:01.853575+06:30 chan-dell CRON[77619]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-03T13:17:01.861588+06:30 chan-dell CRON[77619]: pam_unix(cron:session): session closed for user root
+2026-08-03T13:21:55.321591+06:30 chan-dell gnome-keyring-daemon[63700]: asked to register item /org/freedesktop/secrets/collection/login/5, but it's already registered
+2026-08-03T13:30:01.878322+06:30 chan-dell CRON[80150]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-03T13:30:01.881479+06:30 chan-dell CRON[80150]: pam_unix(cron:session): session closed for user root
+2026-08-03T14:17:01.916838+06:30 chan-dell CRON[83333]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-03T14:17:01.928178+06:30 chan-dell CRON[83333]: pam_unix(cron:session): session closed for user root
+2026-08-03T14:20:07.409542+06:30 chan-dell systemd-logind[1101]: Lid closed.
+2026-08-03T14:20:07.423535+06:30 chan-dell systemd-logind[1101]: Suspending...
+2026-08-03T14:36:21.943023+06:30 chan-dell systemd-logind[1101]: Lid opened.
+2026-08-03T14:36:22.123595+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 1 matched rules; type="method_call", sender=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined") interface="org.bluez.GattProfile1" member="Release" error name="(unset)" requested_reply="0" destination=":1.441" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined")
+2026-08-03T14:36:22.383239+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T14:36:22.387009+06:30 chan-dell dbus-daemon[1069]: message repeated 18 times: [ [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")]
+2026-08-03T14:36:22.408187+06:30 chan-dell systemd-logind[1101]: Operation 'suspend' finished.
+2026-08-03T14:36:25.479203+06:30 chan-dell unix_chkpwd[83692]: password check failed for user (chan)
+2026-08-03T14:36:25.479772+06:30 chan-dell gdm-password]: pam_unix(gdm-password:auth): authentication failure; logname=chan uid=0 euid=0 tty=/dev/tty1 ruser= rhost=  user=chan
+2026-08-03T14:36:33.670534+06:30 chan-dell gdm-password]: gkr-pam: unlocked login keyring
+2026-08-03T14:37:13.073399+06:30 chan-dell CRON[83902]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-03T14:37:13.086568+06:30 chan-dell CRON[83902]: pam_unix(cron:session): session closed for user root
+2026-08-03T14:41:54.530285+06:30 chan-dell systemd-logind[1101]: Lid closed.
+2026-08-03T14:41:54.545915+06:30 chan-dell systemd-logind[1101]: Suspending...
+2026-08-03T15:08:06.819790+06:30 chan-dell systemd-logind[1101]: Lid opened.
+2026-08-03T15:08:06.946683+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 1 matched rules; type="method_call", sender=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined") interface="org.bluez.GattProfile1" member="Release" error name="(unset)" requested_reply="0" destination=":1.441" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined")
+2026-08-03T15:08:07.269300+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T15:08:07.269566+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T15:08:07.269714+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T15:08:07.269852+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T15:08:07.269984+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T15:08:07.270110+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T15:08:07.270231+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T15:08:07.270372+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T15:08:07.270486+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T15:08:07.270603+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T15:08:07.270713+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T15:08:07.270813+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T15:08:07.271123+06:30 chan-dell dbus-daemon[1069]: message repeated 7 times: [ [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")]
+2026-08-03T15:08:07.295849+06:30 chan-dell systemd-logind[1101]: Operation 'suspend' finished.
+2026-08-03T15:08:10.299823+06:30 chan-dell unix_chkpwd[84390]: password check failed for user (chan)
+2026-08-03T15:08:10.300452+06:30 chan-dell gdm-password]: pam_unix(gdm-password:auth): authentication failure; logname=chan uid=0 euid=0 tty=/dev/tty1 ruser= rhost=  user=chan
+2026-08-03T15:08:17.691490+06:30 chan-dell gdm-password]: gkr-pam: unlocked login keyring
+2026-08-03T15:17:01.074737+06:30 chan-dell CRON[86357]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-03T15:17:01.096893+06:30 chan-dell CRON[86357]: pam_unix(cron:session): session closed for user root
+2026-08-03T15:25:31.734343+06:30 chan-dell sudo: pam_unix(sudo:session): session opened for user root(uid=0) by chan(uid=1000)
+2026-08-03T15:25:31.740145+06:30 chan-dell sudo: chan : TTY=/dev/pts/0 ; PWD=/home/chan/Desktop/script ; USER=root ; COMMAND=/usr/bin/chmod +x scriptone.sh
+2026-08-03T15:25:31.740221+06:30 chan-dell sudo: pam_unix(sudo:session): session closed for user root
+2026-08-03T15:30:01.143847+06:30 chan-dell CRON[87073]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-03T15:30:01.156698+06:30 chan-dell CRON[87073]: pam_unix(cron:session): session closed for user root
+2026-08-03T16:17:01.281039+06:30 chan-dell CRON[89025]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-03T16:17:01.284229+06:30 chan-dell CRON[89025]: pam_unix(cron:session): session closed for user root
+2026-08-03T16:30:01.325416+06:30 chan-dell CRON[89697]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-03T16:30:01.344769+06:30 chan-dell CRON[89697]: pam_unix(cron:session): session closed for user root
+2026-08-03T16:45:08.399210+06:30 chan-dell sudo: pam_unix(sudo:session): session opened for user root(uid=0) by chan(uid=1000)
+2026-08-03T16:45:08.405891+06:30 chan-dell sudo: chan : TTY=/dev/pts/0 ; PWD=/home/chan/Desktop/script ; USER=root ; COMMAND=/usr/bin/chmod +x check.sh
+2026-08-03T16:45:08.405991+06:30 chan-dell sudo: pam_unix(sudo:session): session closed for user root
+2026-08-03T16:57:31.622397+06:30 chan-dell systemd-logind[1101]: Lid closed.
+2026-08-03T16:57:31.635772+06:30 chan-dell systemd-logind[1101]: Suspending...
+2026-08-03T17:00:27.812814+06:30 chan-dell systemd-logind[1101]: Lid opened.
+2026-08-03T17:00:28.104003+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 1 matched rules; type="method_call", sender=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined") interface="org.bluez.GattProfile1" member="Release" error name="(unset)" requested_reply="0" destination=":1.441" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined")
+2026-08-03T17:00:28.251093+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T17:00:28.254188+06:30 chan-dell dbus-daemon[1069]: message repeated 18 times: [ [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")]
+2026-08-03T17:00:28.281516+06:30 chan-dell systemd-logind[1101]: Operation 'suspend' finished.
+2026-08-03T17:00:31.282420+06:30 chan-dell gdm-password]: gkr-pam: unlocked login keyring
+2026-08-03T17:01:50.380760+06:30 chan-dell gnome-keyring-daemon[63700]: asked to register item /org/freedesktop/secrets/collection/login/5, but it's already registered
+2026-08-03T17:17:01.314641+06:30 chan-dell CRON[93007]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-03T17:17:01.329793+06:30 chan-dell CRON[93007]: pam_unix(cron:session): session closed for user root
+2026-08-03T17:18:45.345709+06:30 chan-dell gnome-keyring-daemon[63700]: asked to register item /org/freedesktop/secrets/collection/login/5, but it's already registered
+2026-08-03T17:19:28.621947+06:30 chan-dell systemd-logind[1101]: The system will suspend now!
+2026-08-03T17:19:29.667393+06:30 chan-dell systemd-logind[1101]: Lid closed.
+2026-08-03T19:59:42.764265+06:30 chan-dell systemd-logind[1101]: Lid opened.
+2026-08-03T19:59:42.914321+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 1 matched rules; type="method_call", sender=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined") interface="org.bluez.GattProfile1" member="Release" error name="(unset)" requested_reply="0" destination=":1.441" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined")
+2026-08-03T19:59:43.225696+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T19:59:43.225998+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T19:59:43.239065+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T19:59:43.239318+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T19:59:43.244263+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T19:59:43.244514+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T19:59:43.244682+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T19:59:43.244865+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T19:59:43.245052+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T19:59:43.245281+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T19:59:43.245615+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T19:59:43.246231+06:30 chan-dell dbus-daemon[1069]: message repeated 8 times: [ [system] Rejected send message, 0 matched rules; type="error", sender=":1.440" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")]
+2026-08-03T19:59:43.260621+06:30 chan-dell systemd-logind[1101]: Operation 'suspend' finished.
+2026-08-03T19:59:55.405528+06:30 chan-dell gdm-password]: gkr-pam: unlocked login keyring
+2026-08-03T20:00:11.960467+06:30 chan-dell CRON[94437]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-03T20:00:11.971800+06:30 chan-dell CRON[94437]: pam_unix(cron:session): session closed for user root
+2026-08-03T20:00:11.997056+06:30 chan-dell CRON[94440]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-03T20:00:12.004352+06:30 chan-dell CRON[94440]: pam_unix(cron:session): session closed for user root
+2026-08-03T20:00:12.028683+06:30 chan-dell CRON[94443]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-03T20:00:12.035700+06:30 chan-dell CRON[94443]: pam_unix(cron:session): session closed for user root
+2026-08-03T20:01:33.858296+06:30 chan-dell systemd-logind[1101]: The system will reboot now!
+2026-08-03T20:01:33.964814+06:30 chan-dell systemd-logind[1101]: System is rebooting.
+2026-08-03T20:01:34.062469+06:30 chan-dell gdm-password]: pam_unix(gdm-password:session): session closed for user kyaw
+2026-08-03T20:01:34.162184+06:30 chan-dell gdm-password]: pam_unix(gdm-password:session): session closed for user chan
+2026-08-03T20:01:34.361373+06:30 chan-dell dbus-daemon[1069]: [system] Rejected send message, 1 matched rules; type="method_call", sender=":1.5" (uid=0 pid=1068 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined") interface="org.bluez.GattProfile1" member="Release" error name="(unset)" requested_reply="0" destination=":1.441" (uid=1000 pid=63702 comm="/usr/bin/wireplumber" label="unconfined")
+2026-08-03T20:01:34.446003+06:30 chan-dell systemd-logind[1101]: Session 26 logged out. Waiting for processes to exit.
+2026-08-03T20:03:27.403770+06:30 chan-dell systemd-logind[1090]: New seat seat0.
+2026-08-03T20:03:27.403802+06:30 chan-dell systemd-logind[1090]: Watching system buttons on /dev/input/event6 (Intel HID events)
+2026-08-03T20:03:27.403807+06:30 chan-dell systemd-logind[1090]: Watching system buttons on /dev/input/event7 (Intel HID 5 button array)
+2026-08-03T20:03:27.403818+06:30 chan-dell systemd-logind[1090]: Watching system buttons on /dev/input/event3 (Power Button)
+2026-08-03T20:03:27.403823+06:30 chan-dell systemd-logind[1090]: Watching system buttons on /dev/input/event1 (Power Button)
+2026-08-03T20:03:27.403833+06:30 chan-dell systemd-logind[1090]: Watching system buttons on /dev/input/event0 (Lid Switch)
+2026-08-03T20:03:27.403838+06:30 chan-dell systemd-logind[1090]: Watching system buttons on /dev/input/event2 (Sleep Button)
+2026-08-03T20:03:27.403843+06:30 chan-dell systemd-logind[1090]: Watching system buttons on /dev/input/event4 (AT Translated Set 2 keyboard)
+2026-08-03T20:03:34.288198+06:30 chan-dell gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm-greeter(uid=60578) by (uid=0)
+2026-08-03T20:03:34.318547+06:30 chan-dell systemd-logind[1090]: New session 'c1' of user 'gdm-greeter' with class 'greeter' and type 'wayland'.
+2026-08-03T20:03:34.399760+06:30 chan-dell (systemd): pam_unix(systemd-user:session): session opened for user gdm-greeter(uid=60578) by gdm-greeter(uid=0)
+2026-08-03T20:03:34.402342+06:30 chan-dell systemd-logind[1090]: New session '1' of user 'gdm-greeter' with class 'manager-early' and type 'unspecified'.
+2026-08-03T20:03:44.613044+06:30 chan-dell gdm-password]: gkr-pam: unable to locate daemon control file
+2026-08-03T20:03:44.613216+06:30 chan-dell gdm-password]: gkr-pam: stashed password to try later in open session
+2026-08-03T20:03:44.633950+06:30 chan-dell gdm-password]: pam_unix(gdm-password:session): session opened for user chan(uid=1000) by chan(uid=0)
+2026-08-03T20:03:44.653685+06:30 chan-dell systemd-logind[1090]: New session '2' of user 'chan' with class 'user' and type 'wayland'.
+2026-08-03T20:03:44.702398+06:30 chan-dell (systemd): pam_unix(systemd-user:session): session opened for user chan(uid=1000) by chan(uid=0)
+2026-08-03T20:03:44.703790+06:30 chan-dell systemd-logind[1090]: New session '3' of user 'chan' with class 'manager' and type 'unspecified'.
+2026-08-03T20:03:45.090558+06:30 chan-dell gdm-password]: gkr-pam: unlocked login keyring
+2026-08-03T20:03:51.374782+06:30 chan-dell gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm-greeter
+2026-08-03T20:03:51.384709+06:30 chan-dell systemd-logind[1090]: Session c1 logged out. Waiting for processes to exit.
+2026-08-03T20:03:51.393868+06:30 chan-dell systemd-logind[1090]: Removed session c1.
+2026-08-03T20:03:55.483912+06:30 chan-dell pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by chan(uid=1000)
+2026-08-03T20:03:55.485373+06:30 chan-dell pkexec[4296]: chan: Executing command [USER=root] [TTY=unknown] [CWD=/home/chan] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2026-08-03T20:03:58.334441+06:30 chan-dell PackageKit: uid 1000 is trying to obtain org.freedesktop.packagekit.system-sources-refresh auth (only_trusted:0)
+2026-08-03T20:03:58.340476+06:30 chan-dell PackageKit: uid 1000 obtained auth for org.freedesktop.packagekit.system-sources-refresh
+2026-08-03T20:04:02.066460+06:30 chan-dell systemd-logind[1090]: Removed session 1.
+2026-08-03T20:04:02.066644+06:30 chan-dell (sd-pam): pam_unix(systemd-user:session): session closed for user gdm-greeter
+2026-08-03T20:04:12.484693+06:30 chan-dell sudo: pam_unix(sudo:session): session opened for user root(uid=0) by chan(uid=1000)
+2026-08-03T20:04:12.489697+06:30 chan-dell sudo: chan : TTY=/dev/pts/0 ; PWD=/home/chan/Desktop/script ; USER=root ; COMMAND=/usr/bin/apt clean
+2026-08-03T20:04:12.510985+06:30 chan-dell sudo: pam_unix(sudo:session): session closed for user root
+2026-08-03T20:04:19.971654+06:30 chan-dell sudo: pam_unix(sudo:session): session opened for user root(uid=0) by chan(uid=1000)
+2026-08-03T20:04:19.971948+06:30 chan-dell sudo: chan : TTY=/dev/pts/0 ; PWD=/home/chan/Desktop/script ; USER=root ; COMMAND=/usr/bin/apt clean
+2026-08-03T20:04:19.980632+06:30 chan-dell sudo: pam_unix(sudo:session): session closed for user root
+2026-08-03T20:06:53.383075+06:30 chan-dell pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by chan(uid=1000)
+2026-08-03T20:06:53.387774+06:30 chan-dell pkexec[5426]: chan: Executing command [USER=root] [TTY=unknown] [CWD=/home/chan] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2026-08-03T20:14:19.358772+06:30 chan-dell sudo: pam_unix(sudo:session): session opened for user root(uid=0) by chan(uid=1000)
+2026-08-03T20:14:19.358946+06:30 chan-dell sudo: chan : TTY=/dev/pts/2 ; PWD=/home/chan/Desktop/Git/Bash/BashBasic ; USER=root ; COMMAND=/usr/bin/apt install chan
+2026-08-03T20:14:21.140826+06:30 chan-dell sudo: pam_unix(sudo:session): session closed for user root
+2026-08-03T20:15:28.591392+06:30 chan-dell sudo: pam_unix(sudo:session): session opened for user root(uid=0) by chan(uid=1000)
+2026-08-03T20:15:28.596312+06:30 chan-dell sudo: chan : TTY=/dev/pts/1 ; PWD=/home/chan/Desktop/Git/Bash/BashBasic ; USER=root ; COMMAND=/usr/bin/chmod +x apt.sh
+2026-08-03T20:15:28.596440+06:30 chan-dell sudo: pam_unix(sudo:session): session closed for user root
+2026-08-03T20:17:01.623842+06:30 chan-dell CRON[5973]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-03T20:17:01.627116+06:30 chan-dell CRON[5973]: pam_unix(cron:session): session closed for user root
+2026-08-03T20:30:01.646844+06:30 chan-dell CRON[6783]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-03T20:30:01.653854+06:30 chan-dell CRON[6783]: pam_unix(cron:session): session closed for user root
+2026-08-03T21:13:02.422382+06:30 chan-dell sudo: pam_unix(sudo:session): session opened for user root(uid=0) by chan(uid=1000)
+2026-08-03T21:13:02.422673+06:30 chan-dell sudo: chan : TTY=/dev/pts/1 ; PWD=/home/chan/Desktop/script ; USER=root ; COMMAND=/usr/bin/apt remove htop
+2026-08-03T21:13:10.810806+06:30 chan-dell sudo: pam_unix(sudo:session): session closed for user root
+2026-08-03T21:13:32.733131+06:30 chan-dell sudo: pam_unix(sudo:session): session opened for user root(uid=0) by chan(uid=1000)
+2026-08-03T21:13:32.734100+06:30 chan-dell sudo: chan : TTY=/dev/pts/1 ; PWD=/home/chan/Desktop/script ; USER=root ; COMMAND=/usr/bin/apt update
+2026-08-03T21:13:40.783671+06:30 chan-dell sudo: pam_unix(sudo:session): session closed for user root
+2026-08-03T21:13:40.795238+06:30 chan-dell sudo: pam_unix(sudo:session): session opened for user root(uid=0) by chan(uid=1000)
+2026-08-03T21:13:40.795401+06:30 chan-dell sudo: chan : TTY=/dev/pts/1 ; PWD=/home/chan/Desktop/script ; USER=root ; COMMAND=/usr/bin/apt install htop
+2026-08-03T21:13:49.261810+06:30 chan-dell sudo: pam_unix(sudo:session): session closed for user root
+2026-08-03T21:15:53.159837+06:30 chan-dell pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by chan(uid=1000)
+2026-08-03T21:15:53.165781+06:30 chan-dell pkexec[10356]: chan: Executing command [USER=root] [TTY=unknown] [CWD=/home/chan] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2026-08-03T21:17:01.710742+06:30 chan-dell CRON[10424]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-03T21:17:01.726254+06:30 chan-dell CRON[10424]: pam_unix(cron:session): session closed for user root
+2026-08-03T21:23:53.614186+06:30 chan-dell sudo: pam_unix(sudo:session): session opened for user root(uid=0) by chan(uid=1000)
+2026-08-03T21:23:53.622898+06:30 chan-dell sudo: chan : TTY=/dev/pts/1 ; PWD=/home/chan/Desktop/script ; USER=root ; COMMAND=/usr/bin/chmod +x directory.sh
+2026-08-03T21:23:53.659191+06:30 chan-dell sudo: pam_unix(sudo:session): session closed for user root
+2026-08-03T21:30:01.784683+06:30 chan-dell CRON[11267]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-03T21:30:01.798905+06:30 chan-dell CRON[11267]: pam_unix(cron:session): session closed for user root
+2026-08-03T21:31:16.143221+06:30 chan-dell systemd-logind[1090]: The system will suspend now!
+2026-08-03T21:53:26.079534+06:30 chan-dell dbus-daemon[1056]: [system] Rejected send message, 1 matched rules; type="method_call", sender=":1.7" (uid=0 pid=1055 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined") interface="org.bluez.GattProfile1" member="Release" error name="(unset)" requested_reply="0" destination=":1.81" (uid=1000 pid=2948 comm="/usr/bin/wireplumber" label="unconfined")
+2026-08-03T21:53:26.230807+06:30 chan-dell dbus-daemon[1056]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2948 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.7" (uid=0 pid=1055 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T21:53:26.233963+06:30 chan-dell dbus-daemon[1056]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2948 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.7" (uid=0 pid=1055 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T21:53:26.234302+06:30 chan-dell dbus-daemon[1056]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2948 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.7" (uid=0 pid=1055 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T21:53:26.239060+06:30 chan-dell dbus-daemon[1056]: message repeated 11 times: [ [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2948 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.7" (uid=0 pid=1055 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")]
+2026-08-03T21:53:26.241141+06:30 chan-dell dbus-daemon[1056]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2948 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.7" (uid=0 pid=1055 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T21:53:26.241310+06:30 chan-dell dbus-daemon[1056]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2948 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.7" (uid=0 pid=1055 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T21:53:26.241487+06:30 chan-dell dbus-daemon[1056]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2948 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.7" (uid=0 pid=1055 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T21:53:26.241666+06:30 chan-dell dbus-daemon[1056]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2948 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.7" (uid=0 pid=1055 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T21:53:26.241724+06:30 chan-dell dbus-daemon[1056]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2948 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.7" (uid=0 pid=1055 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T21:53:26.248179+06:30 chan-dell systemd-logind[1090]: Operation 'suspend' finished.
+2026-08-03T21:53:41.987648+06:30 chan-dell gdm-password]: gkr-pam: unlocked login keyring
+2026-08-03T21:55:17.349616+06:30 chan-dell gnome-keyring-daemon[2944]: asked to register item /org/freedesktop/secrets/collection/login/5, but it's already registered
+2026-08-03T22:02:26.426609+06:30 chan-dell sudo: pam_unix(sudo:session): session opened for user root(uid=0) by chan(uid=1000)
+2026-08-03T22:02:26.428713+06:30 chan-dell sudo: chan : TTY=/dev/pts/2 ; PWD=/home/chan/Desktop/script ; USER=root ; COMMAND=/usr/bin/apt remove htop
+2026-08-03T22:02:33.188048+06:30 chan-dell sudo: pam_unix(sudo:session): session closed for user root
+2026-08-03T22:02:44.683556+06:30 chan-dell sudo: pam_unix(sudo:session): session opened for user root(uid=0) by chan(uid=1000)
+2026-08-03T22:02:44.683686+06:30 chan-dell sudo: chan : TTY=/dev/pts/2 ; PWD=/home/chan/Desktop/script ; USER=root ; COMMAND=/usr/bin/apt install htop
+2026-08-03T22:02:54.260923+06:30 chan-dell sudo: pam_unix(sudo:session): session closed for user root
+2026-08-03T22:04:58.653909+06:30 chan-dell sudo: pam_unix(sudo:session): session opened for user root(uid=0) by chan(uid=1000)
+2026-08-03T22:04:58.654319+06:30 chan-dell sudo: chan : TTY=/dev/pts/1 ; PWD=/home/chan/Desktop/script ; USER=root ; COMMAND=/usr/bin/apt install chan
+2026-08-03T22:04:59.419554+06:30 chan-dell pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by chan(uid=1000)
+2026-08-03T22:04:59.420471+06:30 chan-dell pkexec[14559]: chan: Executing command [USER=root] [TTY=unknown] [CWD=/home/chan] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2026-08-03T22:05:00.465083+06:30 chan-dell sudo: pam_unix(sudo:session): session closed for user root
+2026-08-03T22:13:19.268962+06:30 chan-dell gnome-keyring-daemon[2944]: asked to register item /org/freedesktop/secrets/collection/login/5, but it's already registered
+2026-08-03T22:17:01.287519+06:30 chan-dell CRON[17638]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-03T22:17:01.294078+06:30 chan-dell CRON[17638]: pam_unix(cron:session): session closed for user root
+2026-08-03T22:18:39.202893+06:30 chan-dell systemd-logind[1090]: Lid closed.
+2026-08-03T22:18:39.215509+06:30 chan-dell systemd-logind[1090]: Suspending...
+2026-08-03T22:27:56.770915+06:30 chan-dell systemd-logind[1090]: Lid opened.
+2026-08-03T22:27:56.905830+06:30 chan-dell dbus-daemon[1056]: [system] Rejected send message, 1 matched rules; type="method_call", sender=":1.7" (uid=0 pid=1055 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined") interface="org.bluez.GattProfile1" member="Release" error name="(unset)" requested_reply="0" destination=":1.81" (uid=1000 pid=2948 comm="/usr/bin/wireplumber" label="unconfined")
+2026-08-03T22:27:57.239144+06:30 chan-dell dbus-daemon[1056]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2948 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.7" (uid=0 pid=1055 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T22:27:57.241058+06:30 chan-dell dbus-daemon[1056]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2948 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.7" (uid=0 pid=1055 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T22:27:57.243611+06:30 chan-dell dbus-daemon[1056]: message repeated 17 times: [ [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2948 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.7" (uid=0 pid=1055 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")]
+2026-08-03T22:27:57.257563+06:30 chan-dell systemd-logind[1090]: Operation 'suspend' finished.
+2026-08-03T22:28:00.285109+06:30 chan-dell gdm-password]: gkr-pam: unlocked login keyring
+2026-08-03T22:30:01.766847+06:30 chan-dell CRON[18549]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-03T22:30:01.779003+06:30 chan-dell CRON[18549]: pam_unix(cron:session): session closed for user root
+2026-08-03T22:43:09.638646+06:30 chan-dell systemd-logind[1090]: The system will suspend now!
+2026-08-03T23:53:06.044841+06:30 chan-dell dbus-daemon[1056]: [system] Rejected send message, 1 matched rules; type="method_call", sender=":1.7" (uid=0 pid=1055 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined") interface="org.bluez.GattProfile1" member="Release" error name="(unset)" requested_reply="0" destination=":1.81" (uid=1000 pid=2948 comm="/usr/bin/wireplumber" label="unconfined")
+2026-08-03T23:53:06.210748+06:30 chan-dell dbus-daemon[1056]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2948 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.7" (uid=0 pid=1055 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-03T23:53:06.212593+06:30 chan-dell dbus-daemon[1056]: message repeated 18 times: [ [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2948 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.7" (uid=0 pid=1055 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")]
+2026-08-03T23:53:06.225729+06:30 chan-dell systemd-logind[1090]: Operation 'suspend' finished.
+2026-08-03T23:53:14.933240+06:30 chan-dell gdm-password]: gkr-pam: unlocked login keyring
+2026-08-03T23:53:55.318618+06:30 chan-dell CRON[19877]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-03T23:53:55.327976+06:30 chan-dell CRON[19877]: pam_unix(cron:session): session closed for user root
+2026-08-03T23:58:48.705948+06:30 chan-dell sudo: pam_unix(sudo:session): session opened for user root(uid=0) by chan(uid=1000)
+2026-08-03T23:58:48.706590+06:30 chan-dell sudo: chan : TTY=/dev/pts/1 ; PWD=/home/chan/Desktop/script ; USER=root ; COMMAND=/usr/bin/chmod +x while.sh
+2026-08-03T23:58:48.714476+06:30 chan-dell sudo: pam_unix(sudo:session): session closed for user root
+2026-08-04T00:01:25.412488+06:30 chan-dell gnome-keyring-daemon[2944]: asked to register item /org/freedesktop/secrets/collection/login/5, but it's already registered
+2026-08-04T00:17:01.360653+06:30 chan-dell CRON[23983]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-04T00:17:01.371053+06:30 chan-dell CRON[23983]: pam_unix(cron:session): session closed for user root
+2026-08-04T00:31:58.310905+06:30 chan-dell systemd-machined[1092]: New machine qemu-1-rocky9.
+2026-08-04T01:17:01.408686+06:30 chan-dell CRON[25101]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-04T01:17:01.418205+06:30 chan-dell CRON[25101]: pam_unix(cron:session): session closed for user root
+2026-08-04T01:46:12.863631+06:30 chan-dell systemd-logind[1090]: The system will suspend now!
+2026-08-04T01:46:14.456928+06:30 chan-dell systemd-logind[1090]: Lid closed.
+2026-08-04T08:55:03.827718+06:30 chan-dell systemd-logind[1090]: Lid opened.
+2026-08-04T08:55:03.942255+06:30 chan-dell dbus-daemon[1056]: [system] Rejected send message, 1 matched rules; type="method_call", sender=":1.7" (uid=0 pid=1055 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined") interface="org.bluez.GattProfile1" member="Release" error name="(unset)" requested_reply="0" destination=":1.81" (uid=1000 pid=2948 comm="/usr/bin/wireplumber" label="unconfined")
+2026-08-04T08:55:04.355099+06:30 chan-dell dbus-daemon[1056]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2948 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.7" (uid=0 pid=1055 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-04T08:55:04.356280+06:30 chan-dell dbus-daemon[1056]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2948 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.7" (uid=0 pid=1055 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-04T08:55:04.356454+06:30 chan-dell dbus-daemon[1056]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2948 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.7" (uid=0 pid=1055 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-04T08:55:04.356714+06:30 chan-dell dbus-daemon[1056]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2948 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.7" (uid=0 pid=1055 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-04T08:55:04.356906+06:30 chan-dell dbus-daemon[1056]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2948 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.7" (uid=0 pid=1055 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-04T08:55:04.357068+06:30 chan-dell dbus-daemon[1056]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2948 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.7" (uid=0 pid=1055 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-04T08:55:04.359277+06:30 chan-dell dbus-daemon[1056]: message repeated 13 times: [ [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2948 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.7" (uid=0 pid=1055 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")]
+2026-08-04T08:55:04.364934+06:30 chan-dell systemd-logind[1090]: Operation 'suspend' finished.
+2026-08-04T08:55:07.789839+06:30 chan-dell unix_chkpwd[25544]: password check failed for user (chan)
+2026-08-04T08:55:07.790416+06:30 chan-dell gdm-password]: pam_unix(gdm-password:auth): authentication failure; logname=chan uid=0 euid=0 tty=/dev/tty1 ruser= rhost=  user=chan
+2026-08-04T08:55:15.192362+06:30 chan-dell gdm-password]: gkr-pam: unlocked login keyring
+2026-08-04T09:17:01.785164+06:30 chan-dell CRON[27307]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-04T09:17:01.798828+06:30 chan-dell CRON[27307]: pam_unix(cron:session): session closed for user root
+2026-08-04T09:20:35.502948+06:30 chan-dell systemd-logind[1090]: Lid closed.
+2026-08-04T09:20:35.515861+06:30 chan-dell systemd-logind[1090]: Suspending...
+2026-08-04T09:40:22.776824+06:30 chan-dell systemd-logind[1090]: Lid opened.
+2026-08-04T09:40:23.012952+06:30 chan-dell dbus-daemon[1056]: [system] Rejected send message, 1 matched rules; type="method_call", sender=":1.7" (uid=0 pid=1055 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined") interface="org.bluez.GattProfile1" member="Release" error name="(unset)" requested_reply="0" destination=":1.81" (uid=1000 pid=2948 comm="/usr/bin/wireplumber" label="unconfined")
+2026-08-04T09:40:23.364397+06:30 chan-dell dbus-daemon[1056]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2948 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.7" (uid=0 pid=1055 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-04T09:40:23.380261+06:30 chan-dell dbus-daemon[1056]: message repeated 18 times: [ [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2948 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.7" (uid=0 pid=1055 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")]
+2026-08-04T09:40:23.413746+06:30 chan-dell systemd-logind[1090]: Operation 'suspend' finished.
+2026-08-04T09:40:26.056339+06:30 chan-dell gdm-password]: gkr-pam: unlocked login keyring
+2026-08-04T09:40:46.021269+06:30 chan-dell CRON[27792]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-04T09:40:46.030658+06:30 chan-dell CRON[27792]: pam_unix(cron:session): session closed for user root
+2026-08-04T10:00:27.909453+06:30 chan-dell systemd-machined[1092]: Machine qemu-1-rocky9 terminated.
+2026-08-04T10:17:01.504217+06:30 chan-dell CRON[30010]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-04T10:17:01.512086+06:30 chan-dell CRON[30010]: pam_unix(cron:session): session closed for user root
+2026-08-04T10:30:01.544402+06:30 chan-dell CRON[30486]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-04T10:30:01.554373+06:30 chan-dell CRON[30486]: pam_unix(cron:session): session closed for user root
+2026-08-04T10:46:49.916420+06:30 chan-dell systemd-machined[1092]: New machine qemu-2-rocky9.
+2026-08-04T10:49:39.163355+06:30 chan-dell pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by chan(uid=1000)
+2026-08-04T10:49:39.164369+06:30 chan-dell pkexec[32039]: chan: Executing command [USER=root] [TTY=unknown] [CWD=/home/chan] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2026-08-04T11:17:01.574722+06:30 chan-dell CRON[32938]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-04T11:17:01.580948+06:30 chan-dell CRON[32938]: pam_unix(cron:session): session closed for user root
+2026-08-04T11:30:01.597137+06:30 chan-dell CRON[33389]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-04T11:30:01.604301+06:30 chan-dell CRON[33389]: pam_unix(cron:session): session closed for user root
+2026-08-04T11:50:35.333549+06:30 chan-dell systemd-machined[1092]: Machine qemu-2-rocky9 terminated.
+2026-08-04T12:17:01.622300+06:30 chan-dell CRON[35036]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-04T12:17:01.628393+06:30 chan-dell CRON[35036]: pam_unix(cron:session): session closed for user root
+2026-08-04T12:30:01.639146+06:30 chan-dell CRON[35341]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-04T12:30:01.645047+06:30 chan-dell CRON[35341]: pam_unix(cron:session): session closed for user root
+2026-08-04T13:02:01.405011+06:30 chan-dell systemd-logind[1090]: The system will suspend now!
+2026-08-04T13:02:31.419907+06:30 chan-dell systemd-logind[1090]: Delay lock is active (UID 1000/chan, PID 3218/gnome-shell) but inhibitor timeout is reached.
+2026-08-04T13:07:34.875677+06:30 chan-dell dbus-daemon[1056]: [system] Rejected send message, 1 matched rules; type="method_call", sender=":1.7" (uid=0 pid=1055 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined") interface="org.bluez.GattProfile1" member="Release" error name="(unset)" requested_reply="0" destination=":1.81" (uid=1000 pid=2948 comm="/usr/bin/wireplumber" label="unconfined")
+2026-08-04T13:07:35.147465+06:30 chan-dell dbus-daemon[1056]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2948 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.7" (uid=0 pid=1055 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-04T13:07:35.147690+06:30 chan-dell dbus-daemon[1056]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2948 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.7" (uid=0 pid=1055 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-04T13:07:35.148743+06:30 chan-dell dbus-daemon[1056]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2948 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.7" (uid=0 pid=1055 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-04T13:07:35.148951+06:30 chan-dell dbus-daemon[1056]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2948 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.7" (uid=0 pid=1055 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-04T13:07:35.149112+06:30 chan-dell dbus-daemon[1056]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2948 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.7" (uid=0 pid=1055 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-04T13:07:35.151613+06:30 chan-dell dbus-daemon[1056]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2948 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.7" (uid=0 pid=1055 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-04T13:07:35.151832+06:30 chan-dell dbus-daemon[1056]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2948 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.7" (uid=0 pid=1055 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-04T13:07:35.155333+06:30 chan-dell dbus-daemon[1056]: [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2948 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.7" (uid=0 pid=1055 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")
+2026-08-04T13:07:35.158612+06:30 chan-dell dbus-daemon[1056]: message repeated 11 times: [ [system] Rejected send message, 0 matched rules; type="error", sender=":1.80" (uid=1000 pid=2948 comm="/usr/bin/wireplumber" label="unconfined") interface="(unset)" member="(unset)" error name="org.bluez.MediaEndpoint1.Error.NotImplemented" requested_reply="0" destination=":1.7" (uid=0 pid=1055 comm="/usr/libexec/bluetooth/bluetoothd" label="unconfined")]
+2026-08-04T13:07:35.168828+06:30 chan-dell systemd-logind[1090]: Operation 'suspend' finished.
+2026-08-04T13:07:43.437898+06:30 chan-dell gdm-password]: gkr-pam: unlocked login keyring
+2026-08-04T13:17:01.928428+06:30 chan-dell CRON[38785]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-04T13:17:01.954056+06:30 chan-dell CRON[38785]: pam_unix(cron:session): session closed for user root
+2026-08-04T13:30:01.990852+06:30 chan-dell CRON[39422]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-04T13:30:02.001609+06:30 chan-dell CRON[39422]: pam_unix(cron:session): session closed for user root
+2026-08-04T13:43:45.871240+06:30 chan-dell sudo: pam_unix(sudo:session): session opened for user root(uid=0) by chan(uid=1000)
+2026-08-04T13:43:45.877353+06:30 chan-dell sudo: chan : TTY=/dev/pts/0 ; PWD=/home/chan/Desktop/script ; USER=root ; COMMAND=/usr/bin/chmod +x update.sh
+2026-08-04T13:43:45.877464+06:30 chan-dell sudo: pam_unix(sudo:session): session closed for user root
+2026-08-04T13:44:50.792870+06:30 chan-dell gnome-keyring-daemon[2944]: asked to register item /org/freedesktop/secrets/collection/login/5, but it's already registered
+2026-08-04T13:53:55.627846+06:30 chan-dell sudo: pam_unix(sudo:session): session opened for user root(uid=0) by chan(uid=1000)
+2026-08-04T13:53:55.633884+06:30 chan-dell sudo: chan : TTY=/dev/pts/1 ; PWD=/home/chan/Desktop/script ; USER=root ; COMMAND=/etc/os-release 
+2026-08-04T13:53:57.632700+06:30 chan-dell sudo: pam_unix(sudo:session): session closed for user root
+2026-08-04T14:03:38.100243+06:30 chan-dell sudo: pam_unix(sudo:session): session opened for user root(uid=0) by chan(uid=1000)
+2026-08-04T14:03:38.106488+06:30 chan-dell sudo: chan : TTY=/dev/pts/0 ; PWD=/home/chan/Desktop/script ; USER=root ; COMMAND=/usr/bin/su 
+2026-08-04T14:03:38.117040+06:30 chan-dell su[41919]: (to root) root on pts/1
+2026-08-04T14:03:38.117357+06:30 chan-dell su[41919]: pam_unix(su:session): session opened for user root(uid=0) by chan(uid=0)
+2026-08-04T14:03:38.118811+06:30 chan-dell systemd-logind[1090]: Existing logind session ID 3 used by new audit session, ignoring.
+2026-08-04T14:03:38.138542+06:30 chan-dell systemd-logind[1090]: New session 'c2' of user 'root' with class 'user-early' and type 'tty'.
+2026-08-04T14:03:38.179715+06:30 chan-dell (systemd): pam_unix(systemd-user:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-04T14:03:38.181313+06:30 chan-dell systemd-logind[1090]: New session '23' of user 'root' with class 'manager-early' and type 'unspecified'.
+2026-08-04T14:05:53.812297+06:30 chan-dell sudo: pam_unix(sudo:session): session opened for user root(uid=0) by chan(uid=0)
+2026-08-04T14:05:53.818517+06:30 chan-dell sudo: root : TTY=/dev/pts/1 ; PWD=/home/chan/Desktop/script ; USER=root ; COMMAND=/usr/bin/apt update
+2026-08-04T14:05:59.612530+06:30 chan-dell sudo: pam_unix(sudo:session): session closed for user root
+2026-08-04T14:06:43.613426+06:30 chan-dell pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by chan(uid=1000)
+2026-08-04T14:06:43.619482+06:30 chan-dell pkexec[42369]: chan: Executing command [USER=root] [TTY=unknown] [CWD=/home/chan] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2026-08-04T14:09:54.667964+06:30 chan-dell sudo: pam_unix(sudo:session): session opened for user root(uid=0) by chan(uid=0)
+2026-08-04T14:09:54.668894+06:30 chan-dell sudo: root : TTY=/dev/pts/1 ; PWD=/home/chan/Desktop/script ; USER=root ; COMMAND=/usr/bin/apt update
+2026-08-04T14:10:00.499688+06:30 chan-dell sudo: pam_unix(sudo:session): session closed for user root
+2026-08-04T14:10:00.517889+06:30 chan-dell sudo: pam_unix(sudo:session): session opened for user root(uid=0) by chan(uid=0)
+2026-08-04T14:10:00.518027+06:30 chan-dell sudo: root : TTY=/dev/pts/1 ; PWD=/home/chan/Desktop/script ; USER=root ; COMMAND=/usr/bin/apt dist-upgrade
+2026-08-04T14:10:04.274413+06:30 chan-dell sudo: pam_unix(sudo:session): session closed for user root
+2026-08-04T14:12:43.123155+06:30 chan-dell pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by chan(uid=1000)
+2026-08-04T14:12:43.128903+06:30 chan-dell pkexec[42837]: chan: Executing command [USER=root] [TTY=unknown] [CWD=/home/chan] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2026-08-04T14:17:01.026980+06:30 chan-dell CRON[43160]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-04T14:17:01.037829+06:30 chan-dell CRON[43160]: pam_unix(cron:session): session closed for user root
+2026-08-04T14:30:01.081830+06:30 chan-dell CRON[43999]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-08-04T14:30:01.094227+06:30 chan-dell CRON[43999]: pam_unix(cron:session): session closed for user root
+2026-08-04T14:52:29.903355+06:30 chan-dell sudo: pam_unix(sudo:session): session opened for user root(uid=0) by chan(uid=1000)
+2026-08-04T14:52:29.903678+06:30 chan-dell sudo: pam_unix(sudo:session): session closed for user root
+2026-08-04T14:52:39.045301+06:30 chan-dell sudo: pam_unix(sudo:session): session opened for user root(uid=0) by chan(uid=1000)
+2026-08-04T14:52:39.049508+06:30 chan-dell sudo: chan : TTY=/dev/pts/2 ; PWD=/home/chan/Desktop/script ; USER=root ; COMMAND=/usr/bin/chmod +x forloop.sh
+2026-08-04T14:52:39.075882+06:30 chan-dell sudo: pam_unix(sudo:session): session closed for user root
+2026-08-04T14:58:23.634971+06:30 chan-dell sudo: pam_unix(sudo:session): session opened for user root(uid=0) by chan(uid=1000)
+2026-08-04T14:58:23.647023+06:30 chan-dell sudo: chan : TTY=/dev/pts/2 ; PWD=/home/chan/Desktop/script ; USER=root ; COMMAND=/usr/bin/cp /var/log/alternatives.log /var/log/apport.log /var/log/auth.log /var/log/boot.log /var/log/bootstrap.log /var/log/dpkg.log /var/log/fontconfig.log /var/log/gpu-manager.log /var/log/kern.log /var/log/ubuntu-advantage-apt-hook.log /var/log/ubuntu-advantage.log /var/log/vbox-setup.log ./logfile

@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# 1. WRITE THE FUNCTION
+# Keep the () empty. Use $1 and $2 inside.
+greet_players() {
+    local player1=$1
+    local player2=$2
+    
+    echo "🎮 Match Started!"
+    echo "Player 1: $player1"
+    echo "Player 2: $player2"
+    echo "Total players in queue: $#" # $# counts total arguments passed
+}
+
+# 2. CALL THE FUNCTION
+# Syntax: funcName arg1 arg2
+greet_players "Alice" "Bob"
+
