@@ -31,7 +31,11 @@ docker image build -t test:latest .
 docker container run -d --name web1 -p 8080:8080 test:latest
 အဆင့် ၅: Web App ကို စမ်းသပ်ခြင်း
 
-ခင်ဗျားရဲ့ Web Browser ကို ဖွင့်ပြီး http://localhost:8080 (Docker Desktop သုံးရင်) သို့မဟုတ် ခင်ဗျားရဲ့ VM IP Address (ဥပမာ http://192.168.1.100:8080) ကို သွားပါ။ "Hello World" ဆိုတဲ့ စာမျက်နှာ ပေါ်လာရင် အောင်မြင်ပါပြီ။
+ခင်ဗျားရဲ့ Web Browser ကို ဖွင့်ပြီး http://localhost:8080 (Docker Desktop သုံးရင်) သို့မဟုတ် ခင်ဗျားရဲ့ VM IP Address (ဥပမာ http://192.168.1.100:8080) ကို သွား## 📚 References & Credits (ကိုးကားချက်များ)
+
+ဒီ Repository မှာပါတဲ့ သင်ခန်းစာများနှင့် လေ့လာမှုပုံစံ (Learning Path) များကို အောက်ပါ စာအုပ်မှ အခြေခံ၍ ကိုးကား ပြုစုထားခြင်းဖြစ်ပါတယ် -
+
+* **Book:** [Docker Deep Dive](https://nigelpoulton.com/books/docker-deep-dive/) by **Nigel Poulton**ပါ။ "Hello World" ဆိုတဲ့ စာမျက်နှာ ပေါ်လာရင် အောင်မြင်ပါပြီ။
 
 ---
 
