@@ -43,6 +43,51 @@ sleep 100 &
 ps                       # sleep process ရဲ့ PID ကိုရှာပါ။
 kill PID_နံပါတ်         # ဥပမာ kill 1234 (သတိထား! PID ကိုယ်စားထည့်ပါ)
 # kill command က process ကို signal ပို့ပြီး ရပ်စေပါတယ်။
+Linux မှာ Command တွေအကြောင်း သိချင်ရင် အောက်ပါ နည်းလမ်း (၄) ခုကို သုံးပါ -
+
+command --help - အခြေခံ Options တွေကို မြန်မြန်ကြည့်ချင်ရင်
+
+info command - ပိုပြီး အသေးစိတ် ကျယ်ကျယ်ပြန့်ပြန့် သိချင်ရင်
+
+man command - အသုံးအများဆုံး။ Manual Page တွေကို ပြပေးတယ်။
+
+plocate - Command ရဲ့ တည်နေရာကို ရှာချင်ရင်
+
+Man Page အပိုင်း (Section) များ -
+
+Section	အကြောင်းအရာ
+1	User Commands (သာမန်သုံးစွဲသူတွေအတွက်)
+2	System Calls (Programming အတွက်)
+3	C Library Functions (Programming အတွက်)
+4	Special Files (Device Files)
+5	File Formats (ဥပမာ - /etc/passwd)
+8	System Admin Commands (Root လိုအပ်)
+ဥပမာ -
+
+bash
+man passwd          # Section 1 က passwd command အကြောင်း
+man 5 passwd        # Section 5 က passwd ဖိုင်အကြောင်း
+man -k passwd       # "passwd" နဲ့ ဆိုင်တဲ့ Man Page အားလုံးကို ရှာပေးတယ်
+
+# ၁။ test Directory ထဲမှာ ဖိုင်တွေ ဖန်တီးမယ်
+touch apple banana grape grapefruit watermelon
+
+# ၂။ * (Asterisk) - ဘယ် Character မဆို
+ls a*                      # apple ပဲ ပြမယ် (a နဲ့စတဲ့ဖိုင်)
+ls *e                       # apple, grape (e နဲ့ဆုံးတဲ့ဖိုင်)
+ls g*e                      # grape, grapefruit (g နဲ့စပြီး e နဲ့ဆုံး)
+
+# ၃။ ? (Question Mark) - တစ်လုံးတည်းသော Character
+ls ?????                    # apple, grape (၅ လုံးရှိတဲ့ဖိုင်)
+
+# ၄။ [ ] (Brackets) - သတ်မှတ်ထားတဲ့ Character များ
+ls [abw]*                   # apple, banana, watermelon (a, b, w နဲ့စတဲ့ဖိုင်)
+ls [a-g]*                   # apple, banana, grape, grapefruit (a ကနေ g ထိ)
+
+# ၅။ { } (Braces) - Expansion
+touch {John,Bill,Sally}-{Breakfast,Lunch,Dinner}
+ls                          # Bill-Breakfast, Bill-Lunch, ...
+
 
 
 
