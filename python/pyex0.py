@@ -289,16 +289,16 @@ print(safe_int_convert([1, 2]))  # Error message, None
 
 
 # စာရွက်ချက်ပြုတ်နည်း (Function)├── နာမည်: "ကြက်သားဟင်း" (Function Name)├── ပါဝင်ပစ္စည်း: ကြက်သား, ငရုတ်, ဆား (Parameters)├── ချက်ပြုတ်နည်းအဆင့်များ (Code Block)└── ရလဒ်: ကြက်သားဟင်းအဆင်သင့် (Return Value)
-def make_chicken_curry(chicken, chili, salt):
-    # ချက်ပြုတ်နည်း အဆင့်များ (Code Block)
-    cooked_food = f"{chicken} ကို {chili}၊ {salt} တို့နဲ့ နယ်ပြီး မွှေးနေအောင် ချက်လိုက်ပါပြီ"
+# def make_chicken_curry(chicken, chili, salt):
+#     # ချက်ပြုတ်နည်း အဆင့်များ (Code Block)
+#     cooked_food = f"{chicken} ကို {chili}၊ {salt} တို့နဲ့ နယ်ပြီး မွှေးနေအောင် ချက်လိုက်ပါပြီ"
     
-    # ရလဒ် ပြန်ပေးခြင်း (Return Value)
-    return cooked_food
+#     # ရလဒ် ပြန်ပေးခြင်း (Return Value)
+#     return cooked_food
 
-# Function ကို ခေါ်သုံးခြင်း (ပါဝင်ပစ္စည်းများ ထည့်ပေးလိုက်ခြင်း)
-dish = make_chicken_curry("ကြက်သား ၅၀ ကျပ်သား", "ငရုတ်သီး ၂ ဇွန်း", "ဆား နည်းနည်း")
-print(dish)
+# # Function ကို ခေါ်သုံးခြင်း (ပါဝင်ပစ္စည်းများ ထည့်ပေးလိုက်ခြင်း)
+# dish = make_chicken_curry("ကြက်သား ၅၀ ကျပ်သား", "ငရုတ်သီး ၂ ဇွန်း", "ဆား နည်းနည်း")
+# print(dish)
 
 # Deduplication (မထပ်အောင်): တူတဲ့ code ကို ထပ်ခါထပ်ခါ မရေးရဘူး။
 
@@ -309,32 +309,118 @@ print(dish)
 # Abstraction (ဖုံးကွယ်ခြင်း): "Black Box" သဘော - အတွင်းအလုပ်ကို မသိပေမယ့် သုံးလို့ရတယ်။
 
 
-def get_min_max(numbers):
-    """List ထဲက အငယ်ဆုံးနဲ့ အကြီးဆုံးကို ပြန်တယ်"""
-    return min(numbers), max(numbers)  # Tuple အနေနဲ့ ပြန်တယ်
+# def get_min_max(numbers):
+#     """List ထဲက အငယ်ဆုံးနဲ့ အကြီးဆုံးကို ပြန်တယ်"""
+#     return min(numbers), max(numbers)  # Tuple အနေနဲ့ ပြန်တယ်
 
-scores = [85, 92, 78, 95, 88]
-lowest, highest = get_min_max(scores)  # Unpacking
-print(f"Lowest: {lowest}, Highest: {highest}\n")
-
-
-def order_food(item, quantity=1, size="medium"):
-    print(f"Order: {quantity} x {size} {item}")
-
-# Positional arguments (နေရာအတိုင်း)
-order_food("pizza", 2, "large")
-
-# Keyword arguments (အမည်နဲ့ခေါ်)
-order_food(size="small", item="burger", quantity=3)
-order_food("fries", size="large")  # positional + keyword
-print()
+# scores = [85, 92, 78, 95, 88]
+# lowest, highest = get_min_max(scores)  # Unpacking
+# print(f"Lowest: {lowest}, Highest: {highest}\n")
 
 
-def convert_int(value):
-    try:
-        return int(value)
-    except Exception as e:
-        print(f"Error: {e}")
-        return None
+# def order_food(item, quantity=1, size="medium"):
+#     print(f"Order: {quantity} x {size} {item}")
+
+# # Positional arguments (နေရာအတိုင်း)
+# order_food("pizza", 2, "large")
+
+# # Keyword arguments (အမည်နဲ့ခေါ်)
+# order_food(size="small", item="burger", quantity=3)
+# order_food("fries", size="large")  # positional + keyword
+# print()
+
+
+# def convert_int(value):
+#     try:
+#         return int(value)
+#     except Exception as e:
+#         print(f"Error: {e}")
+#         return None
     
-convert_int("123")   # 123
+# convert_int("123")   # 123
+
+
+
+def calc_average(num1, num2, num3):
+    total = num1 + num2 + num3
+    average = total / 3
+    return average
+# calc_average(10, 20, 30)  # Output: 20.0
+result = calc_average(10, 20, 30)
+print("Average is:", result)
+
+def multiply(a, b=1):
+    return a * b
+
+print(multiply(5))  # Error!
+
+# counter = 0
+
+# def update_counter():
+#     global counter
+#     counter = counter + 1=
+#     return counter
+
+# result = update_counter()
+# print("Counter after update:", result)
+# print(counter)
+
+span=print("Hello, World!")
+print(span)      # it show none because print() function return None
+
+print('Hello')
+print('World') 
+
+print('Hello', end='|')
+print('World') 
+
+# Function တွေကို ခေါ်တဲ့အခါ Python က Call Stack ကိုသုံးပြီး ဘယ်နေရာကို ပြန်သွားရမလဲ မှတ်ထားတယ်။
+
+# def a():
+#     print('a() starts')
+#     b()
+#     d()
+#     print('a() returns')
+
+# def b():
+#     print('b() starts')
+#     c()
+#     print('b() returns')
+
+# def c():
+#     print('c() starts')
+#     print('c() returns')
+
+# def d():
+#     print('d() starts')
+#     print('d() returns')
+
+# a()
+
+
+
+# အောက်ပါအတိုင်း အလုပ်လုပ်တဲ့ Program ရေးပါ။
+# - counter ဆိုတဲ့ Global Variable တစ်ခုရှိမယ်။ (စမှာ 0)
+# - increment_counter() ဆိုတဲ့ Function တစ်ခုရှိမယ်။
+#   - counter ကို 1 တိုးပေးမယ်။
+#   - counter က 10 ထက်ကျော်ရင် "Counter is at max!" ဆိုပြီး Print ထုတ်ပြီး မတိုးတော့ဘူး။
+# - reset_counter() ဆိုတဲ့ Function တစ်ခုရှိမယ်။
+#   - counter ကို 0 ပြန်သတ်မှတ်မယ်။
+
+
+counter=0
+def reset_counter():
+            global counter
+            counter = 0
+            print("Counter reset to 0.")
+
+def increment_counter():
+    global counter
+    if counter < 10:
+        counter += 1
+        print(f"Counter incremented to: {counter}")
+    else:
+        print(f"Counter is at max! and it is {counter}")
+        reset_counter()  # Reset the counter when it reaches max
+        
+increment_counter()  # Increment the counter
