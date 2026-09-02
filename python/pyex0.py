@@ -21,6 +21,8 @@
 
 
 
+
+
 # Python က Expression တွေကို အမြဲတမ်း တန်ဖိုးတစ်ခုအဖြစ် အကဲဖြတ်တယ်။ ဒါက ပရိုဂရမ်တွေရဲ့ အခြေခံအုတ်မြစ် ဖြစ်တယ်။
 
 # Data Types (int, float, str) တွေက အရမ်းအရေးကြီးတယ်။ ဘာဖြစ်လို့လဲဆိုတော့ Operator (+, *) တွေရဲ့ အလုပ်လုပ်ပုံက Data Type ပေါ်မူတည်လို့ပဲ။ (string ဆို ဆက်ပေး၊ number ဆို ပေါင်း)
@@ -95,6 +97,12 @@
 # name = "Alice"
 # age = 25
 
+# isinstance(variable, type)  # return true or false
+# name=input("Enter your name  :  ")
+# print(name)
+# if isinstance(name, str):
+#     print("It is an string")
+
 # if name == "Alice" and age < 22:
 #     print("Hi, Alice!")          # ဒါက run မယ်
 # elif age < 12 or name == "Alice":
@@ -157,18 +165,176 @@ i=0
 
 # အောက်ပါ Code မှာ အမှား ၃ ချက်ရှိနေပါတယ်။ ရှာပြီး ပြင်ပေးပါ။
 
-number = 5
+# number = 5
 
-if number == 5:
-    print("Number is 5")
+# if number == 5:
+#     print("Number is 5")
 
-elif number > 10:
-    print("Number is greater than 10")
-elif number < 5 :
-    print("Number is less than 5")
+# elif number > 10:
+#     print("Number is greater than 10")
+# elif number < 5 :
+#     print("Number is less than 5")
 
-while number > 0:
-    print(number)
-    number = number - 1
-    break
-print("Loop ended",{number})
+# while number > 0:
+#     print(number)
+#     number = number - 1
+#     break
+# print("Loop ended",{number})
+
+
+
+#functional
+# def say_hello():
+#     print("Hello!")
+#     print("How are you?")
+# say_hello()
+# say_hello()
+
+# def say_name(name="Guest"):
+#     print(f"hello {name}")
+    
+# say_name("chan")
+# say_name()
+
+# def add(a, b):
+#     result = a + b
+#     print(f"{a} + {b} = {result}")
+
+# add(5, 3)                  # 5 + 3 = 8
+
+# def square(n):
+#     return n ** 2
+
+# print(square(3))           # 9
+# print(square(5) + square(2))  # 25 + 4 = 29
+
+
+# return မပါတဲ့ Function → None ပြန်တယ်
+# def do_nothing():
+#     # print("hello world")
+#     pass   
+# # pass က ဘာမှမလုပ်ဘူး
+# print(do_nothing())  # None
+
+# spam = print("Hello!")     # print() က None ပြန်တယ်
+# print(spam)                # None
+
+# result = None
+# if result is None:         # is က identity စစ်တယ် (== ထက် ပိုကောင်းတယ်)
+#     print("Result is None")
+
+
+# global_var = "I'm global"
+
+# def local_demo():
+#     local_var = "I'm local"    # Local variable
+#     print(local_var)           # Local ကို သုံးလို့ရတယ်
+#  #  print(global_var)          # Global ကိုလည်း သုံးလို့ရတယ်
+
+# local_demo()
+# # print(local_var)             # ❌ Error! Local ကို အပြင်မှာသုံးလို့မရဘူး
+# print(global_var)  
+
+
+# x= "Hello"
+# def meeting():
+#     # x = "Hi"  # Local variable
+#     global x  # Global variable ကို သုံးချင်ရင် global keyword သုံးရမယ်
+#     x = "Hello !!!!"  # Assigning a new value to the global variable
+#     print(f"{x}, everyone ")  # Local variable ကို သုံးတယ်
+
+# meeting()  # Output: Hi
+# print(x)
+
+
+def calculate_tax(price, tax_rate=0.07):
+    """Price နဲ့ tax_rate ကိုထည့်ရင် tax ပါတဲ့စျေးကို ပြန်ပေးတယ်"""
+    return price * ( 1 + tax_rate)
+
+# ဒီ function ဘယ်လိုအလုပ်လုပ်လဲဆိုတာ မသိပေမယ့် သုံးလို့ရတယ်
+final_price = calculate_tax(100)     # 107.0
+print(f"Price with tax: {final_price}")
+
+# ZeroDivisionError	ဂဏန်းတစ်ခုကို 0 နဲ့ စားမိတဲ့အခါ	10 / 0
+# IndexError	List ထဲမှာ မရှိတဲ့ Index နံပါတ်ကို သွားခေါ်မိသည့်အခါ	a = [1, 2]; print(a[5])
+# FileNotFoundError	မရှိတဲ့ ဖိုင်ကို ဖွင့်ဖို့ ကြိုးစားသည့်အခါ	open("abc.txt")
+# NameError	မသတ်မှတ်ရသေးတဲ့ (Declare မလုပ်ရသေးတဲ့) Variable ကို သုံးမိသည့်အခါ	print(x)
+# TypeError	မတူညီသော သို့မဟုတ် မသက်ဆိုင်သော Data Type နှစ်ခုကို ပေါင်းစပ်မိသည့်အခါ	"age: " + 25
+
+
+# def divide(a, b):
+#     try:
+#         return a / b
+#     except Exception as e:
+#         print(f"Error: {e}")
+#         return None
+
+# print(divide(10, 2))      # 5.0
+# print(divide(10, "chan"))      # Error message, None
+
+# Multiple except blocks
+def safe_int_convert(value):
+    try:
+        return int(value)
+    except ValueError:
+        print(f"Error: '{value}' is not a valid integer!")
+        return None
+    except TypeError:
+        print(f"Error: '{value}' is the wrong type!")
+        return None
+
+print(safe_int_convert("123"))   # 123
+print(safe_int_convert("abc"))   # Error message, None
+print(safe_int_convert([1, 2]))  # Error message, None
+
+
+# စာရွက်ချက်ပြုတ်နည်း (Function)├── နာမည်: "ကြက်သားဟင်း" (Function Name)├── ပါဝင်ပစ္စည်း: ကြက်သား, ငရုတ်, ဆား (Parameters)├── ချက်ပြုတ်နည်းအဆင့်များ (Code Block)└── ရလဒ်: ကြက်သားဟင်းအဆင်သင့် (Return Value)
+def make_chicken_curry(chicken, chili, salt):
+    # ချက်ပြုတ်နည်း အဆင့်များ (Code Block)
+    cooked_food = f"{chicken} ကို {chili}၊ {salt} တို့နဲ့ နယ်ပြီး မွှေးနေအောင် ချက်လိုက်ပါပြီ"
+    
+    # ရလဒ် ပြန်ပေးခြင်း (Return Value)
+    return cooked_food
+
+# Function ကို ခေါ်သုံးခြင်း (ပါဝင်ပစ္စည်းများ ထည့်ပေးလိုက်ခြင်း)
+dish = make_chicken_curry("ကြက်သား ၅၀ ကျပ်သား", "ငရုတ်သီး ၂ ဇွန်း", "ဆား နည်းနည်း")
+print(dish)
+
+# Deduplication (မထပ်အောင်): တူတဲ့ code ကို ထပ်ခါထပ်ခါ မရေးရဘူး။
+
+# Modularity (အပိုင်းပိုင်းခွဲခြင်း): ကြီးမားတဲ့ program ကို အပိုင်းလေးတွေခွဲပြီး စီမံရလွယ်တယ်။
+
+# Reusability (ပြန်သုံးနိုင်မှု): တစ်ခါရေးထားတဲ့ function ကို နေရာမျိုးစုံမှာ သုံးလို့ရတယ်။
+
+# Abstraction (ဖုံးကွယ်ခြင်း): "Black Box" သဘော - အတွင်းအလုပ်ကို မသိပေမယ့် သုံးလို့ရတယ်။
+
+
+def get_min_max(numbers):
+    """List ထဲက အငယ်ဆုံးနဲ့ အကြီးဆုံးကို ပြန်တယ်"""
+    return min(numbers), max(numbers)  # Tuple အနေနဲ့ ပြန်တယ်
+
+scores = [85, 92, 78, 95, 88]
+lowest, highest = get_min_max(scores)  # Unpacking
+print(f"Lowest: {lowest}, Highest: {highest}\n")
+
+
+def order_food(item, quantity=1, size="medium"):
+    print(f"Order: {quantity} x {size} {item}")
+
+# Positional arguments (နေရာအတိုင်း)
+order_food("pizza", 2, "large")
+
+# Keyword arguments (အမည်နဲ့ခေါ်)
+order_food(size="small", item="burger", quantity=3)
+order_food("fries", size="large")  # positional + keyword
+print()
+
+
+def convert_int(value):
+    try:
+        return int(value)
+    except Exception as e:
+        print(f"Error: {e}")
+        return None
+    
+convert_int("123")   # 123
