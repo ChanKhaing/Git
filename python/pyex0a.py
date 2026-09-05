@@ -324,14 +324,276 @@ deployment = {
 
 # Staging အတွက် copy လုပ်တယ်
 staging_deployment = copy.deepcopy(deployment)
-staging_deployment['spec']['containers'][0]['image'] = 'app:staging'
-staging_deployment['spec']['containers'][1]['image'] = 'sidecar:staging'
+staging_deployment = copy.copy(deployment)
+print(f"statging : {staging_deployment}")
+# staging_deployment['spec']['containers'][0]['image'] = 'app:staging'
+# staging_deployment['spec']['containers'][1]['image'] = 'sidecar:staging'
 
-print(deployment['spec']['containers'][0]['image'])  # 'app:v1' (မပြောင်းဘူး)
-print(staging_deployment['spec']['containers'][0]['image'])  # 'app:staging'
+# print(deployment['spec']['containers'][0]['image'])  # 'app:v1' (မပြောင်းဘူး)
+# print(staging_deployment['spec']['containers'][0]['image'])  # 'app:staging'
 
 prod = ['nginx', 'mysql']
 # staging = copy.copy(prod)  # copy လုပ်ဖို့မမေ့နဲ့
 staging = prod.copy()
 staging.append('redis')
 print(prod)  
+
+lst = [1, 2]
+lst.append([3, 4])  # [1, 2, [3, 4]]
+
+# extend() - adds multiple items
+lst = [1, 2]
+lst.extend([3, 4])  # [1, 2, 3, 4]
+
+#copy.copy(): #Shallow copy - အပြင်ဘက် list ကိုပဲ copy
+
+#copy.deepcopy(): Deep copy - inner structures ပါ copy
+
+# nested list ပါရင် deepcopy() သုံး
+
+# List comprehension သုံးပြီး list ကို generate လုပ်နိုင်တယ်
+
+
+squares = [x**2 for x in range(10)]
+# Equivalent to:
+squares = []
+for x in range(10):
+    squares.append(x**2)
+    # print(squares)  # [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+
+# With condition
+even_squares = [x**2 for x in range(10) if x % 2 == 0]
+
+# Dictionary ဖန်တီးနည်း - curly braces {} နဲ့
+my_cat = {'size': 'fat', 'color': 'gray', 'disposition': 'loud'}
+
+# Key နဲ့ Value ကိုယူခြင်း
+print(my_cat['size'])   # 'fat'
+print(my_cat['color'])  # 'gray'
+
+# Integer key လည်းသုံးလို့ရ
+spam = {12345: 'Luggage Combination', 42: 'The Answer'}
+print(spam[42])  # 'The Answer'
+
+
+# Key က Index နေရာမှာ သုံးတယ် (List က integer ပဲသုံးလို့ရ၊ Dictionary က ဘယ် type မဆိုရ)
+
+# Key-Value Pair က Dictionary ရဲ့ အခြေခံအဆောက်အအုံ
+
+# Mutable (ပြောင်းလို့ရ) - List နဲ့တူပဲ
+
+
+server_config = {
+    'host': 'localhost',      # String key
+    'port': 8080,             # Integer value
+    'debug': True,            # Boolean value
+    'timeout': 30.5           # Float value
+}
+print(server_config)
+
+server_config = {
+    'host': 'localhost',      # String key
+    'port': 8080,             # Integer value
+    'debug': True,            # Boolean value
+    'timeout': 30.5           # Float value
+}
+print(server_config)
+
+
+print(f"Host: {server_config['host']}")      # Host: localhost
+
+
+status_codes = {
+    200: 'OK',
+    404: 'Not Found',
+    500: 'Internal Server Error'
+}
+print(f"Status 200: {status_codes[200]}")    # Status 200: OK
+
+# 4. Mixed type keys
+mixed_dict = {
+    'name': 'server1',        # String key
+    42: 'answer',             # Integer key
+    (1, 2): 'tuple key'       # Tuple key (immutable)
+}
+
+print(f"Tuple Key: {mixed_dict[(1, 2)]}")  # Tuple Key: tuple key
+
+
+
+config = {'host': 'localhost', 'port': 8080}
+try:
+    print(config['timeout'])  # Key doesn't exist
+except KeyError as e:
+    print(f"❌ KeyError: {e}")
+
+
+
+# 6. Better way - Using get()
+# print(f"Using get(): {config.get('timeout', 30)}")
+print(f"hello {config.get('chan',40)}")
+
+
+services = {
+    'api-gateway': {'port': 8080, 'health': '/health'},
+    'auth-service': {'port': 8081, 'health': '/ping'},
+    'user-service': {'port': 8082, 'health': '/status'}
+}
+
+# Access service info
+auth = services.get('api-gateway')
+if auth:
+    print(f"Auth service port: {auth['health']}")
+else:
+    print("Auth service not found")
+    
+    
+eggs = {'name': 'Zophie', 'species': 'cat', 'age': '8'}
+print(list(eggs))  # ['name', 'species', 'age']
+print(list(eggs.values()))  # dict_values(['Zophie', 'cat', '8'])
+
+
+env_vars = {}
+env_vars['PATH'] = '/usr/bin:/bin'
+env_vars['HOME'] = '/root'
+env_vars['USER'] = 'admin'
+env_vars['SHELL'] = '/bin/bash'
+
+for key, value in env_vars.items():
+    print(f"export {key}={value}")
+# export PATH=/usr/bin:/bin
+# export HOME=/root
+# export USER=admin
+# export SHELL=/bin/bash
+
+config = {}
+config['host'] = 'localhost'
+config['port'] = 8080
+config['debug'] = True
+config['timeout'] = 30
+
+
+for key, value in config.items():
+    print(f"config {key}: {value}")
+    
+# keys(), values(), items() Methods
+
+
+# ============================================
+# keys(), values(), items() Methods
+# ============================================
+
+# 1. Dictionary setup
+server = {
+    'name': 'web-1',
+    'ip': '10.0.1.10',
+    'status': 'running',
+    'cpu': 45.5,
+    'memory': 2048
+}
+print(f"Server: {server}")
+
+# 2. keys() - Keys တွေကိုယူ
+print("\n=== keys() ===")
+keys = server.keys()
+print(f"Keys: {keys}")
+print(f"Keys as list: {list(keys)}")
+# ['name', 'ip', 'status', 'cpu', 'memory']
+
+# 3. values() - Values တွေကိုယူ
+print("\n=== values() ===")
+values = server.values()
+print(f"Values: {values}")
+print(f"Values as list: {list(values)}")
+# ['web-1', '10.0.1.10', 'running', 45.5, 2048]
+
+# 4. items() - Key-Value pairs တွေကိုယူ
+print("\n=== items() ===")
+items = server.items()
+print(f"Items: {items}")
+print(f"Items as list: {list(items)}")
+# [('name', 'web-1'), ('ip', '10.0.1.10'), ('status', 'running'), ('cpu', 45.5), ('memory', 2048)]
+
+# 5. Loop with keys()
+print("\n=== Loop with keys() ===")
+for key in server.keys():
+    print(f"Key: {key}")
+
+# 6. Loop with values()
+print("\n=== Loop with values() ===")
+for value in server.values():
+    print(f"Value: {value}")
+
+# 7. Loop with items() - Multiple assignment
+print("\n=== Loop with items() ===")
+for key, value in server.items():
+    print(f"{key}: {value}")
+
+# 8. ⚠️ dict_keys, dict_values, dict_items are view objects
+# They reflect changes to the dictionary
+print("\n=== View Objects Reflect Changes ===")
+view = server.keys()
+print(f"Before: {list(view)}")
+server['new_key'] = 'new_value'
+print(f"After: {list(view)}")  # 'new_key' appears
+
+# 9. DevOps လက်တွေ့ - Config validation
+print("\n=== Config Validation ===")
+required_keys = ['name', 'ip', 'status']
+server_config = {
+    'name': 'web-1',
+    'ip': '10.0.1.10',
+    'status': 'running',
+    'cpu': 45.5
+}
+
+missing_keys = [key for key in required_keys if key not in server_config.keys()]
+if missing_keys:
+    print(f"❌ Missing keys: {missing_keys}")
+else:
+    print("✅ All required keys present")
+
+# 10. Dictionary to list conversion
+print("\n=== Convert to List ===")
+server_list = list(server.items())
+print(f"Server items as list: {server_list}")
+
+
+# Key စစ်ဖို့ key in dict က အတိုဆုံးနည်း
+
+# Value စစ်ဖို့ value in dict.values() သုံး
+
+# not in က မရှိဘူးဆိုရင် True ပြန်
+
+spam = {'name': 'Zophie', 'age': 7}
+
+# Key ရှိမရှိစစ်
+print('name' in spam)        # True (shorthand)
+print('name' in spam.keys()) # True (explicit)
+print('color' in spam)       # False
+
+# Value ရှိမရှိစစ်
+print('Zophie' in spam.values())  # True
+print('Zophie' not in spam.values())  # False
+
+
+picnic_items = {'apples': 5, 'cups': 2}
+
+# Key ရှိရင် value ပြန်
+print(picnic_items.get('cups', 0))   # 2
+
+# Key မရှိရင် default ပြန်
+print(picnic_items.get('eggs', 0))   # 0
+
+# ⚠️ Without get() - KeyError
+
+
+spam = {'name': 'Pooka', 'age': 5}
+
+# Key မရှိရင် set
+spam.setdefault('color', 'black')  # 'black'
+print(spam)  # {'name': 'Pooka', 'age': 5, 'color': 'black'}
+
+# Key ရှိပြီးသားဆို မပြောင်း
+spam.setdefault('color', 'white')  # 'black' (returns existing)
+print(spam)  # {'name': 'Pooka', 'age': 5, 'color': 'black'}
