@@ -91,11 +91,23 @@ cat Dockerfile
 docker image build -t my-atsea-app:latest .
 
 # Image စာရင်းကြည့်ရင် သေးငယ်တဲ့ Production Image ကို တွေ့ရမယ်။
-docker image ls
-```
+docker image ls 
 
 ---
 
+######  Image ကို Registry သို့ Push လုပ်ခြင်း
+
+# Command: docker login
+# Docker Hub ကို ခင်ဗျားရဲ့ အကောင့်နဲ့ ဝင်ပါ။
+#### docker login
+
+# Command: docker image tag my-web-app:latest <your-docker-id>/my-web-app:latest
+# Image ကို Registry အတွက် Tag ပြောင်းပါ။
+docker image tag my-web-app:latest nigelpoulton/my-web-app:latest
+
+# Command: docker image push nigelpoulton/my-web-app:latest
+# Image ကို Docker Hub ကို Push လုပ်ပါ။
+docker image push nigelpoulton/my-web-app:latest
 ### ၃။ Key Takeaways & Best Practices (သတိထားရန်နှင့် မရှိမဖြစ် မှတ်သားရမည့် အချက်များ)
 
 ဒီအခန်းပြီးသွားရင် အောက်ပါ အချက် (၃) ချက်ကို သေချာမှတ်ထားပါ။
@@ -111,4 +123,45 @@ docker image ls
 
 ---
 
+မေးခွန်း (၁): Dockerfile မှာ RUN နဲ့ ENTRYPOINT ဘာကွာခြားလဲ။
+RUN က Image Build လုပ်တဲ့အခါ အလုပ်လုပ်ပြီး Layer အသစ် ဖန်တီးတယ်။ ENTRYPOINT က Container စတင်တဲ့အခါ အလုပ်လုပ်ပြီး Metadata ပဲ ဖန်တီးတယ်။
 
+မေးခွန်း (၂): Multi-Stage Build က ဘာကြောင့် Production အတွက် ကောင်းတာလဲ။
+Build Tools တွေကို ဖယ်ရှားပြီး Final Image ကို သေးငယ်စေလို့ပါ။ သေးငယ်တဲ့ Image က Deploy မြန်တယ်၊ လုံခြုံတယ်။
+
+မေးခွန်း (၃): COPY နဲ့ ADD ဘာကွာခြားလဲ။
+COPY က ဖိုင်တွေကို ကူးတယ်။ ADD က ကူးတာနဲ့အပြင် URL ကနေ Download လုပ်နိုင်တယ်၊ TAR ဖိုင်ကို Extract လုပ်နိုင်တယ်။ ဒါပေမယ့် COPY က ပိုပြီး ရှင်းလင်းပြီး ပိုလုံခြုံတယ်။
+
+
+Troubleshoot
+အမှား (၁): Build လုပ်တဲ့အခါ "COPY failed: stat /var/lib/docker/tmp/docker-builder...: no such file or directory"
+
+bash
+# ဘာကြောင့်လဲဆိုတော့ Dockerfile မှာ COPY လုပ်တဲ့ ဖိုင် သို့မဟုတ် Folder မရှိလို့ပါ။
+# ဖြေရှင်းနည်း - လက်ရှိ Folder မှာ ဖိုင်တွေ ရှိမရှိ စစ်ပါ။
+ls -la
+# ဥပမာ - COPY ./src ဆိုရင် src Folder ရှိရမယ်။
+# မရှိရင် Dockerfile ကို ပြင်ပါ။
+အမှား (၂): Port 8080 ကို သုံးနေပြီ (Bind for 0.0.0.0:8080 failed)
+
+bash
+# ဘာကြောင့်လဲဆိုတော့ ခင်ဗျားရဲ့ စက်မှာ Port 8080 ကို တခြား Application က သုံးနေလို့ပါ။
+# ဖြေရှင်းနည်း - Port ကို ပြောင်းပါ။
+docker container run -d --name web1 -p 8081:8080 my-web-app:latest
+# Browser မှာ http://localhost:8081 ကိုသွားပါ။
+အမှား (၃): Image Push လုပ်တဲ့အခါ "denied: requested access to the resource is denied"
+
+bash
+# ဘာကြောင့်လဲဆိုတော့ Docker Hub ကို Login မဝင်ရသေးလို့ သို့မဟုတ် Repository မရှိလို့ပါ။
+# ဖြေရှင်းနည်း - docker login နဲ့ ဝင်ပါ။
+docker login
+# ပြီးရင် Docker Hub မှာ Repository အသစ် ဖန်တီးပါ။
+# ဒါမှမဟုတ် Tag ကို စစ်ပါ။ (docker image tag my-web-app:latest <your-docker-id>/my-web-app:latest)
+အမှား (၄): Build လုပ်တဲ့အခါ အချိန်အကြာကြီးကြာခြင်း
+
+bash
+# ဘာကြောင့်လဲဆိုတော့ Cache ကို မသုံးလို့ သို့မဟုတ် Network နှေးလို့ပါ။
+# ဖြေရှင်းနည်း - Cache ကို သုံးပါ။ (ပထမဆုံး Build က ကြာတယ်၊ ဒုတိယအကြိမ်က မြန်တယ်)
+# --no-cache ကို မသုံးပါနဲ့။
+docker image build -t my-web-app:latest .
+# ဒါမှမဟုတ် Build Context ကို သေးငယ်အောင် လုပ်ပါ။ (.dockerignore ကို သုံးပါ)

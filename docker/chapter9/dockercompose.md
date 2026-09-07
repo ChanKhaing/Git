@@ -67,3 +67,34 @@ docker volume ls
 ၂။ web-fe Service က ဘယ် Image ကို သုံးသလဲ။ (Build လုပ်တာလား၊ Pull လုပ်တာလား)
 ၃။ Port 5000 ကို ဘယ် Service က သုံးသလဲ။
 
+
+# Port 5000 ကို သုံးနေပြီ (Bind for 0.0.0.0:5000 failed)
+# စက်မှာ Port 5000 ကို တခြား Application က သုံးနေလို့ပါ။
+# ဖြေရှင်းနည်း - docker-compose.yml ဖိုင်ကို ပြင်ပြီး Port ကို ပြောင်းပါ။
+# "5000:5000" ကို "5001:5000" လို့ ပြောင်းပါ။ ပြီးရင် ပြန် Deploy လုပ်ပါ။
+docker compose down
+# docker-compose.yml ကို ပြင်ပါ (nano သို့မဟုတ် vi သုံးပါ)
+nano docker-compose.yml
+# ports: - "5001:5000" လို့ ပြောင်းပါ။
+docker compose up -d
+# Browser မှာ http://localhost:5001 ကိုသွားပါ။
+
+# YAML Indentation အမှား (yaml: line X: did not find expected key)
+# ဘာကြောင့်လဲဆိုတော့ docker-compose.yml မှာ Space (indentation) လွဲနေလို့ပါ။
+# YAML က Space ကို အတိအကျ လိုက်နာရတယ်။ (Tab မသုံးနဲ့၊ Space ပဲသုံး)
+# ဖြေရှင်းနည်း - docker-compose.yml ကို စစ်ပြီး Indentation ကို ပြင်ပါ။
+# ဥပမာ - services: အောက်မှာ နေရာ (၂) နေရာ ခံပြီး web-fe: လို့ ရေးပါ။
+
+##  Network သို့မဟုတ် Volume မဖန်တီးနိုင်ခြင်း
+# ဘာကြောင့်လဲဆိုတော့ Docker Daemon မှာ Permission မရှိလို့ပါ။ (Linux)
+# ဖြေရှင်းနည်း - ခင်ဗျားရဲ့ User ကို docker group ထဲ ထည့်ထားဖို့ လိုပါတယ်။
+# (အခန်း ၃ မှာ သင်ခဲ့တယ်)
+sudo usermod -aG docker $USER
+newgrp docker
+# ပြီးရင် docker compose up -d ကို ပြန်ရိုက်ပါ။
+
+# Image Build မလုပ်နိုင်ခြင်း (Dockerfile မရှိဘူး)
+# ဘာကြောင့်လဲဆိုတော့ build: . ကိုသုံးထားပေမယ့် Dockerfile မရှိလို့ပါ။
+# ဖြေရှင်းနည်း - လက်ရှိ Folder မှာ Dockerfile ရှိမရှိ စစ်ပါ။
+ls -la Dockerfile
+# မရှိရင် အသစ်ဖန်တီးပါ။
