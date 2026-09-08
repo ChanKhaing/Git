@@ -5,6 +5,27 @@
 ၄။ Rolling Updates - Downtime မရှိဘဲ Application ကို Update လုပ်လို့ရတယ်။
 ၅။ Secure by Default - TLS ကို Default အနေနဲ့ သုံးထားတယ်။
 
+
+Docker Swarm ဆိုတာ ဘာလဲ"
+ဒီအခန်းမတိုင်ခင် ကျနော်တို့လုပ်ခဲ့တာက  Docker Host တစ်လုံးတည်းပေါ်မှာ Container တွေ မောင်းခဲ့တယ်။ ဒါပေမယ့် လက်တွေ့ Production Environment တွေမှာ Server အများကြီး (Cluster) ပေါ်မှာ Container တွေ မောင်းရတယ်။ ဒီလိုအခါမျိုးမှာ Docker Swarm က ကူညီတယ်။
+
+အုပ်စုဖွဲ့ ခရီးသွား (Group Tour) ဥပမာ -
+
+Swarm = ခရီးသွားအုပ်စုကြီးတစ်ခု (Cluster)။ Server အကုန်လုံး ပါတယ်။
+
+Manager Node = ခရီးစဉ်မှူး (Tour Guide)။ ဘယ်သွားမယ်၊ ဘယ်လိုသွားမယ်ဆိုတာ စီစဉ်တယ်။
+
+Worker Node = ခရီးသွားတွေ (Tourists)။ ခရီးစဉ်မှူး ပြောတဲ့အတိုင်း လိုက်လုပ်တယ်။
+
+Service = ခရီးစဉ်အစီအစဉ် (Itinerary)။ ဘယ် Application ကို ဘယ်နှစ်ခု (Replicas) မောင်းရမယ်ဆိုတာ သတ်မှတ်တယ်။
+
+Task (Replica) = ခရီးသွားတစ်ယောက်ချင်း (Individual Tourist)။ Service ရဲ့ တစ်ခုချင်းစီပါ။
+
+
+
+
+
+
 Swarm vs Compose (ဘာကွာခြားလဲ) -
 
 # Compose = Single Host ပေါ်မှာ Multi-Container App ကို စီမံတယ်။ (Development, Testing)
